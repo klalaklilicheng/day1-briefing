@@ -257,20 +257,35 @@ function renderTweets() {
 }
 
 async function load() {
+  let d;
   try {
-    const res = await fetch('data/market.json');
-    const d = await res.json();
-    document.getElementById('stocks').innerHTML = d.stocks.map(renderPriceCard).join('');
-    document.getElementById('crypto').innerHTML = d.crypto.map(renderPriceCard).join('');
-    if (d.btc_score) document.getElementById('btc-score').innerHTML = renderBTCScore(d.btc_score);
-    if (d.earnings) document.getElementById('earnings').innerHTML = renderEarnings(d.earnings);
-    if (d.fomc) document.getElementById('fomc').innerHTML = renderFOMC(d.fomc);
-    if (d.news) document.getElementById('news').innerHTML = renderNews(d.news);
-    if (d.ipo_watch) document.getElementById('ipo').innerHTML = renderIPO(d.ipo_watch);
-    const t = new Date(d.updated_at);
-    document.getElementById('updated').textContent = t.toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' });
+    const res = await fetch('data/market.json?t=' + Date.now());
+    d = await res.json();
   } catch (e) {
     document.getElementById('stocks').innerHTML = '<div class="loading">Failed to load data</div>';
+    return;
+  }
+  const sections = [
+    ['stocks', () => d.stocks?.map(renderPriceCard).join('')],
+    ['crypto', () => d.crypto?.map(renderPriceCard).join('')],
+    ['btc-score', () => d.btc_score ? renderBTCScore(d.btc_score) : null],
+    ['earnings', () => d.earnings ? renderEarnings(d.earnings) : null],
+    ['fomc', () => d.fomc ? renderFOMC(d.fomc) : null],
+    ['news', () => d.news ? renderNews(d.news) : null],
+    ['ipo', () => d.ipo_watch ? renderIPO(d.ipo_watch) : null],
+  ];
+  for (const [id, fn] of sections) {
+    try {
+      const html = fn();
+      if (html != null) document.getElementById(id).innerHTML = html;
+    } catch (e) {
+      console.error(`Render ${id}:`, e);
+      document.getElementById(id).innerHTML = `<div class="loading">Error: ${e.message}</div>`;
+    }
+  }
+  if (d.updated_at) {
+    const t = new Date(d.updated_at);
+    document.getElementById('updated').textContent = t.toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' });
   }
 }
 
