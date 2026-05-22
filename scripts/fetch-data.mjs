@@ -166,6 +166,26 @@ async function fetchIPONews() {
   return ipo;
 }
 
+// --- BTC cycle score ---
+async function fetchBTCScore() {
+  try {
+    const res = await fetch('https://brief.day1global.xyz/api/btc-score');
+    if (!res.ok) throw new Error(`${res.status}`);
+    const d = await res.json();
+    return {
+      score: d.score, level: d.level, suggestion: d.suggestion,
+      daily_score: d.dailyScore, weekly_score: d.weeklyScore,
+      btc_price: d.btcPrice, fear_greed: d.fearGreed,
+      indicators: (d.indicators || []).map(i => ({
+        name: i.name, value: i.value, score: i.score, weight: i.weight, group: i.group,
+      })),
+    };
+  } catch (e) {
+    console.error(`  BTC score: ${e.message}`);
+    return null;
+  }
+}
+
 // --- FOMC ---
 function buildFOMC() {
   const today = new Date().toISOString().slice(0, 10);
@@ -200,11 +220,15 @@ async function main() {
   const ipo_watch = await fetchIPONews();
   ipo_watch.forEach(i => console.log(`  ${i.company}: ${i.news.length} articles`));
 
+  console.log('Fetching BTC cycle score...');
+  const btc_score = await fetchBTCScore();
+  if (btc_score) console.log(`  Score: ${btc_score.score} (${btc_score.level})`);
+
   console.log('Building FOMC calendar...');
   const fomc = buildFOMC();
   console.log(`  Next: ${fomc.next?.date} (${fomc.next?.days_until} days)`);
 
-  const result = { updated_at: new Date().toISOString(), stocks, crypto, earnings, news, ipo_watch, fomc };
+  const result = { updated_at: new Date().toISOString(), stocks, crypto, earnings, news, ipo_watch, btc_score, fomc };
 
   const dataDir = join(process.cwd(), 'data');
   if (!existsSync(dataDir)) mkdirSync(dataDir, { recursive: true });

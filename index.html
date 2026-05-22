@@ -31,6 +31,23 @@
   .flat { color: #666; }
   .error { opacity: 0.4; }
 
+  /* BTC Cycle */
+  .btc-box { background: #161616; border: 1px solid #222; border-radius: 10px; padding: 20px; }
+  .btc-header { display: flex; align-items: baseline; gap: 16px; margin-bottom: 16px; flex-wrap: wrap; }
+  .btc-score-big { font-size: 48px; font-weight: 700; }
+  .btc-meta { font-size: 14px; color: #999; }
+  .btc-meta .level { font-weight: 600; }
+  .btc-suggestion { font-size: 13px; color: #888; margin-bottom: 16px; padding: 8px 12px; background: #1a1a1a; border-radius: 6px; }
+  .btc-indicators { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 6px; }
+  .btc-ind { display: flex; justify-content: space-between; align-items: center; padding: 6px 10px; border-radius: 6px; font-size: 12px; }
+  .btc-ind .ind-name { color: #999; }
+  .btc-ind .ind-bar { flex: 1; margin: 0 10px; height: 4px; background: #222; border-radius: 2px; position: relative; }
+  .btc-ind .ind-fill { height: 100%; border-radius: 2px; }
+  .btc-ind .ind-score { color: #ccc; font-weight: 500; min-width: 24px; text-align: right; }
+  .score-low { color: #22c55e; }
+  .score-mid { color: #f59e0b; }
+  .score-high { color: #ef4444; }
+
   /* Earnings */
   .earnings-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
   .earn-card { background: #161616; border: 1px solid #222; border-radius: 10px; padding: 14px; }
@@ -98,6 +115,11 @@
   </section>
 
   <section>
+    <h2>BTC Cycle Score</h2>
+    <div class="btc-box" id="btc-score"><div class="loading">Loading...</div></div>
+  </section>
+
+  <section>
     <h2>Earnings Calendar</h2>
     <div class="earnings-grid" id="earnings"><div class="loading">Loading...</div></div>
   </section>
@@ -136,6 +158,30 @@ function renderPriceCard(item) {
     <div class="price ${cls}">$${p}</div>
     <div class="change ${cls}">${arrow} ${sign}${item.change_pct}%</div>
   </div>`;
+}
+
+function renderBTCScore(bs) {
+  if (!bs) return '<div class="loading">No data</div>';
+  const scoreColor = bs.score <= 35 ? 'score-low' : bs.score <= 65 ? 'score-mid' : 'score-high';
+  const indicators = bs.indicators.map(i => {
+    const fillColor = i.score <= 35 ? '#22c55e' : i.score <= 65 ? '#f59e0b' : '#ef4444';
+    const pct = Math.min(i.score, 100);
+    return `<div class="btc-ind">
+      <span class="ind-name">${i.name}</span>
+      <span class="ind-bar"><span class="ind-fill" style="width:${pct}%;background:${fillColor}"></span></span>
+      <span class="ind-score">${i.score}</span>
+    </div>`;
+  }).join('');
+  return `<div class="btc-header">
+      <span class="btc-score-big ${scoreColor}">${bs.score}</span>
+      <div class="btc-meta">
+        <div class="level">${bs.level}</div>
+        <div>BTC $${bs.btc_price?.toLocaleString()} · Fear ${bs.fear_greed}</div>
+        <div>Daily ${bs.daily_score}/32 · Weekly ${bs.weekly_score}/68</div>
+      </div>
+    </div>
+    <div class="btc-suggestion">${bs.suggestion}</div>
+    <div class="btc-indicators">${indicators}</div>`;
 }
 
 function renderEarnings(earnings) {
@@ -216,6 +262,7 @@ async function load() {
     const d = await res.json();
     document.getElementById('stocks').innerHTML = d.stocks.map(renderPriceCard).join('');
     document.getElementById('crypto').innerHTML = d.crypto.map(renderPriceCard).join('');
+    if (d.btc_score) document.getElementById('btc-score').innerHTML = renderBTCScore(d.btc_score);
     if (d.earnings) document.getElementById('earnings').innerHTML = renderEarnings(d.earnings);
     if (d.fomc) document.getElementById('fomc').innerHTML = renderFOMC(d.fomc);
     if (d.news) document.getElementById('news').innerHTML = renderNews(d.news);
