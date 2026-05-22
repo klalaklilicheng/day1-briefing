@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-22T07:16:08.808Z",
+  "updated_at": "2026-05-22T08:03:43.936Z",
   "stocks": [
     {
       "symbol": "VOO",
@@ -60,65 +60,58 @@
   "crypto": [
     {
       "symbol": "BTC",
-      "price": 77294,
-      "change_pct": -0.23
+      "price": 77366,
+      "change_pct": -0.66
     },
     {
       "symbol": "ETH",
-      "price": 2125.52,
-      "change_pct": 0.06
+      "price": 2127.33,
+      "change_pct": -0.36
     },
     {
       "symbol": "SOL",
-      "price": 86.66,
+      "price": 86.96,
       "change_pct": 0.39
     },
     {
       "symbol": "HYPE",
-      "price": 57.07,
-      "change_pct": -0.18
+      "price": 57.89,
+      "change_pct": -1.05
     },
     {
       "symbol": "ZEC",
-      "price": 649.03,
-      "change_pct": -2.75
+      "price": 655.58,
+      "change_pct": -1.3
     },
     {
       "symbol": "TAO",
-      "price": 279.73,
-      "change_pct": -1.12
+      "price": 283.21,
+      "change_pct": 0.11
     },
     {
       "symbol": "SKY",
-      "price": 1652.58,
-      "change_pct": 0.89
+      "price": 1654.04,
+      "change_pct": 0.46
     },
     {
       "symbol": "AAVE",
-      "price": 87.74,
-      "change_pct": -1.09
+      "price": 87.82,
+      "change_pct": -1.64
     },
     {
       "symbol": "BNB",
-      "price": 656.08,
-      "change_pct": 0.78
+      "price": 659.53,
+      "change_pct": 0.92
     }
   ],
   "earnings": {
-    "VOO": {
-      "next": null,
-      "history": []
-    },
-    "QQQ": {
-      "next": null,
-      "history": []
-    },
-    "QQQM": {
-      "next": null,
-      "history": []
-    },
     "NVDA": {
-      "next": null,
+      "next": {
+        "date": "2026-11-19",
+        "quarter": 2,
+        "year": 2027,
+        "is_estimate": true
+      },
       "history": [
         {
           "period": "2026-06-30",
@@ -152,10 +145,16 @@
           "estimate": 1.0281,
           "surprise_pct": 2.1301
         }
-      ]
+      ],
+      "comment": "连续4季超预期 (+4.3%)"
     },
     "TSLA": {
-      "next": null,
+      "next": {
+        "date": "2026-08-20",
+        "quarter": 2,
+        "year": 2026,
+        "is_estimate": true
+      },
       "history": [
         {
           "period": "2026-03-31",
@@ -189,10 +188,16 @@
           "estimate": 0.4373,
           "surprise_pct": -8.5296
         }
-      ]
+      ],
+      "comment": "上季超预期 (+8.7%)"
     },
     "GOOG": {
-      "next": null,
+      "next": {
+        "date": "2026-08-20",
+        "quarter": 2,
+        "year": 2026,
+        "is_estimate": true
+      },
       "history": [
         {
           "period": "2026-03-31",
@@ -226,10 +231,16 @@
           "estimate": 2.25,
           "surprise_pct": 2.6667
         }
-      ]
+      ],
+      "comment": "上季不及预期 (-3.1%)"
     },
     "RKLB": {
-      "next": null,
+      "next": {
+        "date": "2026-08-20",
+        "quarter": 2,
+        "year": 2026,
+        "is_estimate": true
+      },
       "history": [
         {
           "period": "2026-03-31",
@@ -263,10 +274,16 @@
           "estimate": -0.1167,
           "surprise_pct": -11.3967
         }
-      ]
+      ],
+      "comment": "上季超预期 (+14.1%)"
     },
     "CRCL": {
-      "next": null,
+      "next": {
+        "date": "2026-08-20",
+        "quarter": 2,
+        "year": 2026,
+        "is_estimate": true
+      },
       "history": [
         {
           "period": "2026-03-31",
@@ -300,10 +317,16 @@
           "estimate": -0.7067,
           "surprise_pct": 244.3328
         }
-      ]
+      ],
+      "comment": "上季超预期 (+4.7%)"
     },
     "PLTR": {
-      "next": null,
+      "next": {
+        "date": "2026-08-20",
+        "quarter": 2,
+        "year": 2026,
+        "is_estimate": true
+      },
       "history": [
         {
           "period": "2026-03-31",
@@ -337,10 +360,16 @@
           "estimate": 0.1405,
           "surprise_pct": 13.879
         }
-      ]
+      ],
+      "comment": "连续4季超预期 (+15.8%)"
     },
     "MSTR": {
-      "next": null,
+      "next": {
+        "date": "2026-08-20",
+        "quarter": 2,
+        "year": 2026,
+        "is_estimate": true
+      },
       "history": [
         {
           "period": "2026-03-31",
@@ -374,14 +403,71 @@
           "estimate": -0.0936,
           "surprise_pct": 34929.0598
         }
-      ]
-    },
-    "GLD": {
-      "next": null,
-      "history": []
+      ],
+      "comment": "上季不及预期 (-770.4%)"
     }
   },
   "news": [
+    {
+      "symbols": [
+        "NVDA"
+      ],
+      "headline": "Nvidia Stock Underperformance 'One Of The Mysteries Of The Universe,' Says CEO Jensen Huang — Wall Street Analysts Agree It Shouldn't Be",
+      "summary": "Nvidia’s first-quarter beat sparked price target hikes by 17 analysts. The most bullish of them expects NVDA to more than double.",
+      "url": "https://finnhub.io/api/news?id=5afaf4b2a3bcb95781f5366778413ae7c0971fd6d82d3834436b9fb9ee8b36d6",
+      "source": "Yahoo",
+      "datetime": 1779435671
+    },
+    {
+      "symbols": [
+        "TSLA"
+      ],
+      "headline": "DXYZ, VCX Stocks Catch IPO Fever: Traders Chase SpaceX, OpenAI And Anthropic For Valuations Rivaling TSLA, META",
+      "summary": "SpaceX accounts for 16.2% of DXYZ’s portfolio, while VCX holds Anthropic at 20.7%, OpenAI at 9.9% and SpaceX at 5%.",
+      "url": "https://finnhub.io/api/news?id=3213cce7575617729ef7b7a421e340a502a500ebd0d349a94d475ce11b87b75a",
+      "source": "Yahoo",
+      "datetime": 1779435496
+    },
+    {
+      "symbols": [
+        "NVDA"
+      ],
+      "headline": "2 Stocks That Could Realistically Double by 2030",
+      "summary": "Long-time shareholders are already pretty satisfied with these companies, but there might be even more upside ahead.",
+      "url": "https://finnhub.io/api/news?id=6964753ad0767d2abbbf0a03b23af530d11df727c2ff7e0209ebd9150b9d20c1",
+      "source": "Yahoo",
+      "datetime": 1779435300
+    },
+    {
+      "symbols": [
+        "NVDA"
+      ],
+      "headline": "Should You Buy the iShares Silver ETF After Its 35% Plunge? Here's What Could Happen Next.",
+      "summary": "Precious metals like gold and silver have given up a chunk of their 2025 gains.",
+      "url": "https://finnhub.io/api/news?id=e165240f71ebc16d17e51796352bc5b8e1ae75c013ba36e5c34f8c17d4cb9d3f",
+      "source": "Yahoo",
+      "datetime": 1779434400
+    },
+    {
+      "symbols": [
+        "TSLA"
+      ],
+      "headline": "Tesla FSD Expansion And Musk Ecosystem Ties Reshape Investor Questions",
+      "summary": "Tesla (NasdaqGS:TSLA) has launched its Full Self-Driving (FSD) software in China and nine additional markets after securing regulatory approval. The rollout marks a key expansion of Tesla's software o",
+      "url": "https://finnhub.io/api/news?id=13141a1e304997a8b420f1851f1e96fb9394cc8dd7b0fc10975b54e03e356a93",
+      "source": "Yahoo",
+      "datetime": 1779434122
+    },
+    {
+      "symbols": [
+        "SOL"
+      ],
+      "headline": "Tokenized stocks risk liquidity and revenue fragmentation: Research",
+      "summary": "TradFi views the breakup of its previously consolidated, centralized liquidity as a “serious structural threat,” said Tiger Research director Ryan Yoon.",
+      "url": "https://cointelegraph.com/news/tokenized-stocks-risk-liquidity-and-revenue-fragmentation-research?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "datetime": 1779432995
+    },
     {
       "symbols": [
         "BTC",
@@ -392,6 +478,16 @@
       "url": "https://www.coindesk.com/markets/2026/05/22/xrp-funds-sees-fresh-inflows-and-wallet-spike-as-bitcoin-ether-funds-bleed",
       "source": "CoinDesk",
       "datetime": 1779431778
+    },
+    {
+      "symbols": [
+        "TSLA"
+      ],
+      "headline": "Tesla Investors Beware? SpaceX IPO Could Pull Cash, Attention And Musk Away From EV Giant",
+      "summary": "Elon Musk-led commercial spaceflight giant SpaceX‘s IPO could become a problem for Tesla Inc. (NASDAQ:TSLA) investors and shareholders as the market readies itself for the June IPO date. Muskonomy The",
+      "url": "https://finnhub.io/api/news?id=ff519e9a6ec053eb4843864c2787c7b3f650b192064010de6935938a162147ca",
+      "source": "Yahoo",
+      "datetime": 1779428395
     },
     {
       "symbols": [
@@ -413,26 +509,6 @@
       "url": "https://investinglive.com/Cryptocurrency/ethereum-price-analysis-today-20260522/",
       "source": "Forexlive",
       "datetime": 1779427687
-    },
-    {
-      "symbols": [
-        "NVDA"
-      ],
-      "headline": "French quantum firm Alice & Bob wins new investment from Nvidia venture arm",
-      "summary": "French company Alice & Bob has won funding from Nvidia's venture capital arm NVentures, it said on ‌Friday, supporting its development of hardware to make quantum computing less ‌error-prone at a time",
-      "url": "https://finnhub.io/api/news?id=f3658809f721acfef1cd6a85b44e28a962b0257da87f4b7e4c6dc4de61c971cc",
-      "source": "Yahoo",
-      "datetime": 1779426248
-    },
-    {
-      "symbols": [
-        "TSLA"
-      ],
-      "headline": "No, Tesla Doesn't Need E.U. Approval to Sell Full Self-Driving (Supervised) in Europe",
-      "summary": "It can go country by country.",
-      "url": "https://finnhub.io/api/news?id=d35165c1c413f4cce5dea107ecd8e587f4f01524f04c6b388380155230bdd53d",
-      "source": "Yahoo",
-      "datetime": 1779425940
     },
     {
       "symbols": [
@@ -477,6 +553,46 @@
     },
     {
       "symbols": [
+        "VOO"
+      ],
+      "headline": "Belated Comments On The AI Boom",
+      "summary": "Fixed investment in information technology equipment and software as a percentage of GDP (ends in 2026Q1) in the last two quarters of data saw a surge of about 0.4% of GDP.",
+      "url": "https://finnhub.io/api/news?id=293b4cd45f43f1b09ba57633b6f04d803a1fd5a1fda7ec3b44572f44e42b9c66",
+      "source": "SeekingAlpha",
+      "datetime": 1779420900
+    },
+    {
+      "symbols": [
+        "QQQ"
+      ],
+      "headline": "Belated Comments On The AI Boom",
+      "summary": "Fixed investment in information technology equipment and software as a percentage of GDP (ends in 2026Q1) in the last two quarters of data saw a surge of about 0.4% of GDP.",
+      "url": "https://finnhub.io/api/news?id=293b4cd45f43f1b09ba57633b6f04d803a1fd5a1fda7ec3b44572f44e42b9c66",
+      "source": "SeekingAlpha",
+      "datetime": 1779420900
+    },
+    {
+      "symbols": [
+        "VOO"
+      ],
+      "headline": "Global Bond Selloff Persists As Inflation Expectations Rise, Upending Rate Plans",
+      "summary": "Rising inflation, expectations for persistently elevated interest rates, and the ongoing war in Iran have triggered a global bond sell-off with no clear signs of an end. Read more here.",
+      "url": "https://finnhub.io/api/news?id=4d99c19c0587a9934c426cbc5dedb38771bf6b4b5a820efa49fab34149fb1c86",
+      "source": "SeekingAlpha",
+      "datetime": 1779420000
+    },
+    {
+      "symbols": [
+        "QQQ"
+      ],
+      "headline": "Global Bond Selloff Persists As Inflation Expectations Rise, Upending Rate Plans",
+      "summary": "Rising inflation, expectations for persistently elevated interest rates, and the ongoing war in Iran have triggered a global bond sell-off with no clear signs of an end. Read more here.",
+      "url": "https://finnhub.io/api/news?id=4d99c19c0587a9934c426cbc5dedb38771bf6b4b5a820efa49fab34149fb1c86",
+      "source": "SeekingAlpha",
+      "datetime": 1779420000
+    },
+    {
+      "symbols": [
         "GOOG"
       ],
       "headline": "Mitsubishi Electric Engineer Earns Kaggle Competitions Master Title in World’s Largest AI Competition",
@@ -507,36 +623,6 @@
     },
     {
       "symbols": [
-        "TSLA"
-      ],
-      "headline": "Ross Gerber Invokes Netflix, Says Mercedes Made A 'Blockbuster' Error By Letting 10% Tesla Stake Slip Away",
-      "summary": "Ross Gerber, co-founder of Gerber Kawasaki Wealth & Investment Management, agreed Tuesday with a social media post arguing that Mercedes-Benz Group AG’s $50 million investment for nearly 10% of Tesla ",
-      "url": "https://finnhub.io/api/news?id=77c6c24066b36a672f647a39fb745744056dbbf43664c8722fbc9c8ef97875fb",
-      "source": "Yahoo",
-      "datetime": 1779417067
-    },
-    {
-      "symbols": [
-        "NVDA"
-      ],
-      "headline": "Assessing IREN (IREN) Valuation After AI Cloud Pivot And Five Year NVIDIA Contract",
-      "summary": "IREN (NasdaqGS:IREN) is back in focus after a sharp pivot toward AI cloud and data center infrastructure, anchored by a five year AI cloud services contract with NVIDIA and related equity rights. See ",
-      "url": "https://finnhub.io/api/news?id=b7cc62ca7f872a4619c4c1d713cf2822dac9044570af3f21294360955e012e92",
-      "source": "Yahoo",
-      "datetime": 1779416140
-    },
-    {
-      "symbols": [
-        "NVDA"
-      ],
-      "headline": "AMD asking partners to ramp up production, CEO says",
-      "summary": "Advanced ‌Micro Devices ‌CEO Lisa ​Su said on Friday in Taipei ‌that ⁠the company was asking ⁠its partners to ​ramp ​up ​production given ‌strong demand for AI. AMD is a major customer ‌of ​TSMC, ​the",
-      "url": "https://finnhub.io/api/news?id=d79d321c16e5e4c68df0a003f3e6ba71e84dc772870cef7768e2b46a46d093b7",
-      "source": "Yahoo",
-      "datetime": 1779416009
-    },
-    {
-      "symbols": [
         "BTC"
       ],
       "headline": "Bitcoin liquidity balance hints at developing rally toward $80K",
@@ -547,16 +633,6 @@
     },
     {
       "symbols": [
-        "TSLA"
-      ],
-      "headline": "Review & Preview: Oily Roller Coaster",
-      "summary": "The Dow clinched another record close today. Plus, the SpaceX IPO filing tells us a lot about Elon Musk’s wealth.",
-      "url": "https://finnhub.io/api/news?id=7fe9e351c535aa94000d36186e83cd133626c4463965de8409a3b5da52dbe99c",
-      "source": "Yahoo",
-      "datetime": 1779407700
-    },
-    {
-      "symbols": [
         "BTC"
       ],
       "headline": "Bitcoin longs soar despite weak US macroeconomic data: Is $82K BTC next?",
@@ -564,16 +640,6 @@
       "url": "https://cointelegraph.com/markets/bitcoin-longs-soar-despite-weak-us-macroeconomic-data-is-82k-btc-next?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "source": "Cointelegraph",
       "datetime": 1779404833
-    },
-    {
-      "symbols": [
-        "VOO"
-      ],
-      "headline": "The $300,000 Mistake: Financial Advisor Explains Why Waiting to Buy VOO Is Costing You Compounding",
-      "summary": "On a recent episode of Ramsey Everyday Millionaires titled “How Do I Invest When the News Keeps Shaking the Market?”, a caller named Sally explained that she had $300,000 in cash and only $50,000 inve",
-      "url": "https://finnhub.io/api/news?id=bf8c8d08ef69ea2b66e37af9961583e1a50aa65da254f9b310fbdebeac0e9704",
-      "source": "Yahoo",
-      "datetime": 1779404698
     },
     {
       "symbols": [
@@ -627,16 +693,6 @@
     },
     {
       "symbols": [
-        "VOO"
-      ],
-      "headline": "An Investor’s Field Guide to ETF Structures",
-      "summary": "ETFs are the preferred investment vehicle for many investors these days, but they’re not all created equal. Don’t miss this deep dive into how an ETF’s legal structure can shape risk, taxes, and retur",
-      "url": "https://finnhub.io/api/news?id=fb42b43582b54d5e4a5db2f560d28cf2e696996ad598c89134fcc62905d0dccf",
-      "source": "Yahoo",
-      "datetime": 1779394742
-    },
-    {
-      "symbols": [
         "BTC"
       ],
       "headline": "Satoshi’s 1.1M bitcoin and millions more can be saved from quantum attack, says expert",
@@ -647,27 +703,6 @@
     },
     {
       "symbols": [
-        "BTC",
-        "SOL"
-      ],
-      "headline": "Mark Cuban says he sold most of his Bitcoin after failed hedge narrative 'disappointed' the billionaire",
-      "summary": "",
-      "url": "https://www.coindesk.com/markets/2026/05/21/mark-cuban-says-he-sold-most-of-his-bitcoin-after-failed-hedge-narrative-disappointed-the-billionaire",
-      "source": "CoinDesk",
-      "datetime": 1779384616
-    },
-    {
-      "symbols": [
-        "ETH"
-      ],
-      "headline": "Ethereum’s identity crisis is deepening after high-profile 'brain drain' frustrates the community",
-      "summary": "",
-      "url": "https://www.coindesk.com/tech/2026/05/21/ethereum-s-identity-crisis-is-deepening-after-high-profile-brain-drain-frustrates-the-community",
-      "source": "CoinDesk",
-      "datetime": 1779382593
-    },
-    {
-      "symbols": [
         "MSTR"
       ],
       "headline": "Michael Saylor Says MSTR Could Buy All Remaining Bitcoin Before 2140: Report",
@@ -675,16 +710,6 @@
       "url": "https://finnhub.io/api/news?id=2a48d6ee643363e98faf1f26d95171f1901684182e2c4a074a6dc94a9a225ff7",
       "source": "Yahoo",
       "datetime": 1779378312
-    },
-    {
-      "symbols": [
-        "QQQ"
-      ],
-      "headline": "Can Markets Continue Their Upward Momentum Despite Growing Macro Risks?",
-      "summary": "Equities continue to hover near record levels, even as geopolitical and policy uncertainty builds beneath the surface. TD Asset Management's Jing Roy discusses the outlook for markets.",
-      "url": "https://finnhub.io/api/news?id=8e0ea52df11ab7dc82f7df06432eda32b4a481cfbcb4ddc609a728780ca5d2d7",
-      "source": "SeekingAlpha",
-      "datetime": 1779378300
     }
   ],
   "ipo_watch": [
@@ -750,12 +775,12 @@
     }
   ],
   "btc_score": {
-    "score": 35.4,
+    "score": 35.6,
     "level": "偏恐慌",
     "suggestion": "市场偏冷，可适度布局",
     "daily_score": 14.2,
-    "weekly_score": 21.2,
-    "btc_price": 77406.8,
+    "weekly_score": 21.4,
+    "btc_price": 77446.9,
     "fear_greed": 40,
     "indicators": [
       {
@@ -767,14 +792,14 @@
       },
       {
         "name": "Funding Rate",
-        "value": -0.000709,
+        "value": -0.000812,
         "score": 45,
         "weight": 8,
         "group": "daily"
       },
       {
         "name": "多空比",
-        "value": 1.29,
+        "value": 1.3,
         "score": 53,
         "weight": 5,
         "group": "daily"
@@ -844,8 +869,8 @@
       },
       {
         "name": "成交量变化",
-        "value": -50,
-        "score": 31,
+        "value": -33.6,
+        "score": 36,
         "weight": 4,
         "group": "weekly"
       }
