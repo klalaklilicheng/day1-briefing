@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-22T08:35:31.039Z",
+  "updated_at": "2026-05-22T08:49:46.512Z",
   "stocks": [
     {
       "symbol": "VOO",
@@ -60,48 +60,48 @@
   "crypto": [
     {
       "symbol": "BTC",
-      "price": 77367,
-      "change_pct": -0.61
+      "price": 77253,
+      "change_pct": -0.75
     },
     {
       "symbol": "ETH",
-      "price": 2127.71,
-      "change_pct": -0.34
+      "price": 2121.57,
+      "change_pct": -0.62
     },
     {
       "symbol": "SOL",
-      "price": 87.22,
-      "change_pct": 0.39
+      "price": 87.03,
+      "change_pct": 0.3
     },
     {
       "symbol": "HYPE",
-      "price": 58.72,
-      "change_pct": 0.06
+      "price": 59.03,
+      "change_pct": 0.87
     },
     {
       "symbol": "ZEC",
-      "price": 651.8,
-      "change_pct": -2.46
+      "price": 650.09,
+      "change_pct": -2.4
     },
     {
       "symbol": "TAO",
-      "price": 283.5,
-      "change_pct": -1.64
+      "price": 281.21,
+      "change_pct": -2.41
     },
     {
       "symbol": "SKY",
-      "price": 1656.77,
-      "change_pct": 0.51
+      "price": 1652,
+      "change_pct": 0.74
     },
     {
       "symbol": "AAVE",
-      "price": 88.21,
-      "change_pct": -1.6
+      "price": 87.87,
+      "change_pct": -1.89
     },
     {
       "symbol": "BNB",
-      "price": 659.94,
-      "change_pct": 0.95
+      "price": 659.13,
+      "change_pct": 0.75
     }
   ],
   "earnings": {
@@ -452,12 +452,12 @@
         "items": [
           "NASDAQ: $26,270 (+2%) | Gold: $4,530 (0%)",
           "AI stocks soar on Nvidia earnings, Samsung strike halt",
-          "Korea&#39;s KOSPI rallies 8%, 4th biggest jump ever",
+          "Korea's KOSPI rallies 8%, 4th biggest jump ever",
           "Further tightening still possible if needed: FOMC",
           "Oil rebounds on Iran deal uncertainty",
           "Oil ~$100/bbl now consensus for 2027",
           "Saudi oil revenue hits 3-year high",
-          "We may hike for &#39;sake of credibility’: ECB’s Rehn",
+          "We may hike for 'sake of credibility’: ECB’s Rehn",
           "China-Russia trade hits record",
           "US indicts Cuba’s Raul Castro",
           "Norway pushes ‘Viking Bloc’ to contain Russia",
@@ -553,12 +553,12 @@
     }
   ],
   "btc_score": {
-    "score": 35.6,
+    "score": 35.7,
     "level": "偏恐慌",
     "suggestion": "市场偏冷，可适度布局",
     "daily_score": 14.2,
-    "weekly_score": 21.4,
-    "btc_price": 77245.1,
+    "weekly_score": 21.5,
+    "btc_price": 77297.1,
     "fear_greed": 40,
     "indicators": [
       {
@@ -570,7 +570,7 @@
       },
       {
         "name": "Funding Rate",
-        "value": -0.000601,
+        "value": -0.000597,
         "score": 45,
         "weight": 8,
         "group": "daily"
@@ -640,15 +640,15 @@
       },
       {
         "name": "周线 RSI",
-        "value": 40.3,
+        "value": 40.4,
         "score": 34,
         "weight": 5,
         "group": "weekly"
       },
       {
         "name": "成交量变化",
-        "value": -27.3,
-        "score": 37,
+        "value": -21.2,
+        "score": 39,
         "weight": 4,
         "group": "weekly"
       }
