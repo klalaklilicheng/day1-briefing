@@ -2,6 +2,8 @@ import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 
 const STOCKS = ['VOO','QQQ','QQQM','NVDA','TSLA','GOOG','RKLB','CRCL','PLTR','MSTR','GLD'];
+const ETFS = new Set(['VOO','QQQ','QQQM','GLD']);
+const EARNINGS_STOCKS = STOCKS.filter(s => !ETFS.has(s));
 
 const CRYPTO_MAP = {
   BTC: 'bitcoin', ETH: 'ethereum', SOL: 'solana', HYPE: 'hyperliquid',
@@ -67,7 +69,31 @@ async function fetchCryptos() {
   }));
 }
 
-// --- Earnings calendar + history ---
+// --- Earnings calendar + history (individual stocks only, no ETFs) ---
+function estimateNext(history) {
+  if (!history.length) return null;
+  const h = history[0];
+  const p = new Date(h.period);
+  p.setMonth(p.getMonth() + 3);
+  const report = new Date(p); report.setDate(report.getDate() + 50);
+  const nq = h.quarter % 4 + 1;
+  const ny = nq === 1 ? h.year + 1 : h.year;
+  return { date: report.toISOString().slice(0, 10), quarter: nq, year: ny, is_estimate: true };
+}
+
+function genComment(history) {
+  if (!history.length) return '';
+  const beats = history.filter(h => (h.surprise_pct ?? 0) > 0).length;
+  const latest = history[0];
+  const sp = latest.surprise_pct;
+  let c = '';
+  if (beats === history.length && history.length >= 3) c = `连续${beats}季超预期`;
+  else if (beats === 0 && history.length >= 2) c = `连续${history.length}季不及预期`;
+  else c = sp > 0 ? '上季超预期' : sp < 0 ? '上季不及预期' : '上季持平';
+  if (sp != null) c += ` (${sp > 0 ? '+' : ''}${sp.toFixed(1)}%)`;
+  return c;
+}
+
 async function fetchEarnings() {
   const today = new Date().toISOString().slice(0, 10);
   const future = new Date(Date.now() + 90 * 86400000).toISOString().slice(0, 10);
@@ -76,7 +102,7 @@ async function fetchEarnings() {
   try {
     const cal = await finnhub(`/calendar/earnings?from=${today}&to=${future}`);
     for (const e of cal.earningsCalendar || []) {
-      if (STOCKS.includes(e.symbol) && !upcoming[e.symbol]) {
+      if (EARNINGS_STOCKS.includes(e.symbol) && !upcoming[e.symbol]) {
         upcoming[e.symbol] = { date: e.date, quarter: e.quarter, year: e.year,
           eps_estimate: e.epsEstimate, revenue_estimate: e.revenueEstimate };
       }
@@ -86,20 +112,22 @@ async function fetchEarnings() {
   }
 
   const earnings = {};
-  for (const symbol of STOCKS) {
+  for (const symbol of EARNINGS_STOCKS) {
     try {
       const hist = await finnhub(`/stock/earnings?symbol=${symbol}&limit=4`);
+      const history = (hist || []).map(h => ({
+        period: h.period, quarter: h.quarter, year: h.year,
+        actual: h.actual, estimate: h.estimate,
+        surprise_pct: h.surprisePercent,
+      }));
       earnings[symbol] = {
-        next: upcoming[symbol] || null,
-        history: (hist || []).map(h => ({
-          period: h.period, quarter: h.quarter, year: h.year,
-          actual: h.actual, estimate: h.estimate,
-          surprise_pct: h.surprisePercent,
-        })),
+        next: upcoming[symbol] || estimateNext(history),
+        history,
+        comment: genComment(history),
       };
     } catch (e) {
       console.error(`  ${symbol} earnings: ${e.message}`);
-      earnings[symbol] = { next: null, history: [] };
+      earnings[symbol] = { next: null, history: [], comment: '' };
     }
   }
   return earnings;

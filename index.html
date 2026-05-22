@@ -49,12 +49,17 @@
   .score-high { color: #ef4444; }
 
   /* Earnings */
-  .earnings-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+  .earnings-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
   .earn-card { background: #161616; border: 1px solid #222; border-radius: 10px; padding: 14px; }
-  .earn-card .sym { font-size: 14px; font-weight: 600; color: #fff; }
-  .earn-card .next-date { font-size: 12px; color: #f59e0b; margin: 4px 0; }
-  .earn-card .quarters { font-size: 12px; color: #999; margin-top: 6px; }
-  .earn-card .q-row { display: flex; justify-content: space-between; padding: 2px 0; border-bottom: 1px solid #1a1a1a; }
+  .earn-card .sym { font-size: 15px; font-weight: 600; color: #fff; }
+  .earn-card .sym a { color: #fff; }
+  .earn-card .comment { font-size: 12px; color: #94a3b8; margin: 4px 0 2px; }
+  .earn-card .next-date { font-size: 12px; color: #f59e0b; margin: 2px 0 8px; }
+  .earn-card .next-date .est { color: #666; font-style: italic; }
+  .earn-card .quarters { font-size: 12px; color: #999; }
+  .earn-card .q-row { display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #1a1a1a; }
+  .earn-card .q-row a { color: #999; }
+  .earn-card .q-row a:hover { color: #58a6ff; }
   .beat { color: #22c55e; }
   .miss { color: #ef4444; }
 
@@ -186,20 +191,25 @@ function renderBTCScore(bs) {
 
 function renderEarnings(earnings) {
   return Object.entries(earnings).map(([symbol, data]) => {
+    const saUrl = `https://seekingalpha.com/symbol/${symbol}/earnings`;
     const nextHtml = data.next
-      ? `<div class="next-date">Next: ${data.next.date} (Q${data.next.quarter} ${data.next.year})</div>`
-      : `<div class="next-date" style="color:#444">No upcoming date</div>`;
+      ? `<div class="next-date">Next: ${data.next.date} (Q${data.next.quarter} ${data.next.year})${data.next.is_estimate ? ' <span class="est">est.</span>' : ''}</div>`
+      : `<div class="next-date" style="color:#444">Next: TBD</div>`;
+    const commentHtml = data.comment ? `<div class="comment">${data.comment}</div>` : '';
     const histHtml = data.history.length
       ? data.history.slice(0, 4).map(h => {
-          const cls = h.surprise_pct > 0 ? 'beat' : h.surprise_pct < 0 ? 'miss' : '';
+          const cls = (h.surprise_pct ?? 0) > 0 ? 'beat' : (h.surprise_pct ?? 0) < 0 ? 'miss' : '';
           const surp = h.surprise_pct != null ? `${h.surprise_pct > 0 ? '+' : ''}${h.surprise_pct.toFixed(1)}%` : '-';
-          return `<div class="q-row"><span>Q${h.quarter} ${h.year}</span>
+          const qUrl = `https://seekingalpha.com/symbol/${symbol}/earnings/transcripts`;
+          return `<div class="q-row">
+            <a href="${qUrl}" target="_blank">Q${h.quarter} ${h.year}</a>
             <span>EPS: ${h.actual ?? '-'} / ${h.estimate ?? '-'}</span>
             <span class="${cls}">${surp}</span></div>`;
         }).join('')
       : '<div style="color:#444;font-size:12px">No history</div>';
     return `<div class="earn-card">
-      <div class="sym">${symbol}</div>${nextHtml}
+      <div class="sym"><a href="${saUrl}" target="_blank">${symbol} ↗</a></div>
+      ${commentHtml}${nextHtml}
       <div class="quarters">${histHtml}</div>
     </div>`;
   }).join('');
