@@ -63,15 +63,17 @@
   .beat { color: #22c55e; }
   .miss { color: #ef4444; }
 
-  /* Mando Minutes */
-  .mando-box { background: #161616; border: 1px solid #222; border-radius: 10px; padding: 20px; }
-  .mando-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 16px; flex-wrap: wrap; gap: 8px; }
-  .mando-header .title a { font-size: 16px; font-weight: 600; color: #fff; }
-  .mando-header .date { font-size: 12px; color: #666; }
-  .mando-sections { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
-  .mando-section { }
-  .mando-section .sec-header { font-size: 14px; font-weight: 600; color: #f59e0b; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
-  .mando-section .sec-item { font-size: 13px; color: #bbb; padding: 3px 0; border-bottom: 1px solid #1a1a1a; line-height: 1.4; }
+  /* Market News */
+  .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 10px; }
+  .news-card { background: #161616; border: 1px solid #222; border-radius: 10px; padding: 14px; transition: border-color 0.2s; }
+  .news-card:hover { border-color: #333; }
+  .news-card .news-title { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 6px; line-height: 1.4; }
+  .news-card .news-title a { color: #fff; }
+  .news-card .news-title a:hover { color: #58a6ff; }
+  .news-card .news-summary { font-size: 12px; color: #888; line-height: 1.4; margin-bottom: 8px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .news-card .news-meta { font-size: 11px; color: #555; display: flex; justify-content: space-between; align-items: center; }
+  .news-card .news-source { color: #666; }
+  .news-card .news-tag { font-size: 10px; padding: 2px 6px; border-radius: 4px; background: #1a1a1a; color: #888; }
 
   /* IPO watch */
   .ipo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
@@ -101,6 +103,7 @@
     .grid { grid-template-columns: repeat(2, 1fr); }
     .earnings-grid { grid-template-columns: 1fr; }
     .tweets-grid { grid-template-columns: 1fr; }
+    .news-grid { grid-template-columns: 1fr; }
     .ipo-grid { grid-template-columns: 1fr; }
   }
 </style>
@@ -137,8 +140,8 @@
   </section>
 
   <section>
-    <h2>Market News — Mando Minutes</h2>
-    <div class="mando-box" id="mando"><div class="loading">Loading...</div></div>
+    <h2>Market News</h2>
+    <div class="news-grid" id="news"><div class="loading">Loading...</div></div>
   </section>
 
   <section>
@@ -230,19 +233,23 @@ function renderFOMC(fomc) {
   return `${nextHtml}<div class="fomc-timeline">${dots}</div>`;
 }
 
-function renderMando(mando) {
-  if (!mando) return '<div class="loading">No data</div>';
-  const date = mando.date ? new Date(mando.date * 1000).toLocaleDateString('zh-CN', {month:'short', day:'numeric'}) : '';
-  const sectionsHtml = mando.sections.map(s => {
-    const hdr = s.header ? `<div class="sec-header">${s.header}</div>` : '';
-    const items = s.items.slice(0, 20).map(i => `<div class="sec-item">${i}</div>`).join('');
-    return `<div class="mando-section">${hdr}${items}</div>`;
+function renderNews(news) {
+  if (!news || !news.length) return '<div class="loading">No data</div>';
+  return news.map(n => {
+    const time = n.datetime ? new Date(n.datetime * 1000).toLocaleString('zh-CN', {
+      timeZone: 'Asia/Shanghai', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'
+    }) : '';
+    const tag = n.category === 'crypto' ? 'Crypto' : n.related || 'General';
+    const summary = n.summary ? `<div class="news-summary">${n.summary}</div>` : '';
+    return `<div class="news-card">
+      <div class="news-title"><a href="${n.url}" target="_blank">${n.headline}</a></div>
+      ${summary}
+      <div class="news-meta">
+        <span class="news-source">${n.source} · ${time}</span>
+        <span class="news-tag">${tag}</span>
+      </div>
+    </div>`;
   }).join('');
-  return `<div class="mando-header">
-    <div class="title"><a href="${mando.url}" target="_blank">${mando.title} ↗</a></div>
-    <div class="date">${date}</div>
-  </div>
-  <div class="mando-sections">${sectionsHtml}</div>`;
 }
 
 function renderIPO(ipo) {
@@ -285,7 +292,7 @@ async function load() {
     ['btc-score', () => d.btc_score ? renderBTCScore(d.btc_score) : null],
     ['earnings', () => d.earnings ? renderEarnings(d.earnings) : null],
     ['fomc', () => d.fomc ? renderFOMC(d.fomc) : null],
-    ['mando', () => d.mando ? renderMando(d.mando) : null],
+    ['news', () => d.news ? renderNews(d.news) : null],
     ['ipo', () => d.ipo_watch ? renderIPO(d.ipo_watch) : null],
   ];
   for (const [id, fn] of sections) {

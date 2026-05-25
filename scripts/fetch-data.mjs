@@ -133,64 +133,39 @@ async function fetchEarnings() {
   return earnings;
 }
 
-// --- Mando Minutes daily newsletter ---
-function stripHtml(html) {
-  return html
-    .replace(/<style[\s\S]*?<\/style>/gi, '')
-    .replace(/<br\s*\/?>/gi, '\n')
-    .replace(/<\/?(p|div|h[1-6]|li|tr|td|th)[^>]*>/gi, '\n')
-    .replace(/<[^>]+>/g, '')
-    .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"').replace(/&#x27;/g, "'").replace(/&nbsp;/g, ' ')
-    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(n))
-    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCharCode(parseInt(h, 16)))
-    .replace(/\n{3,}/g, '\n\n').trim();
+// --- Market news (Finnhub general + crypto) ---
+let _newsCache = null;
+async function fetchAllNews() {
+  if (_newsCache) return _newsCache;
+  const general = await finnhub('/news?category=general').catch(() => []);
+  const crypto = await finnhub('/news?category=crypto').catch(() => []);
+  _newsCache = [...(general || []), ...(crypto || [])]
+    .filter(n => !n.url?.includes('news.google.com'))
+    .sort((a, b) => (b.datetime || 0) - (a.datetime || 0));
+  return _newsCache;
 }
 
-async function fetchMandoMinutes() {
+async function fetchMarketNews() {
   try {
-    const res = await fetch('https://mandominutes.com/api/getRecentPost');
-    if (!res.ok) throw new Error(`${res.status}`);
-    const d = await res.json();
-    const html = d.content?.free?.rss || '';
-    const text = stripHtml(html);
-
-    // Split into sections by known headers
-    const sections = [];
-    const parts = text.split(/\n(?=Crypto\b|Macro\b|AI & Tech\b)/);
-    for (const part of parts) {
-      const lines = part.split('\n').map(l => l.trim()).filter(Boolean);
-      if (!lines.length) continue;
-      const header = lines[0];
-      if (['Crypto', 'Macro', 'AI & Tech'].some(h => header.startsWith(h))) {
-        sections.push({ header: lines[0], items: lines.slice(1) });
-      } else {
-        sections.push({ header: '', items: lines });
-      }
-    }
-
-    return {
-      title: d.subject_line || 'Mando Minutes',
-      url: d.web_url || 'https://mandominutes.com/Latest',
-      date: d.publish_date,
-      sections,
-    };
+    const all = await fetchAllNews();
+    return all.slice(0, 30).map(n => ({
+      headline: n.headline,
+      summary: n.summary || '',
+      source: n.source || '',
+      url: n.url || '',
+      datetime: n.datetime || 0,
+      category: n.category || '',
+      related: n.related || '',
+    }));
   } catch (e) {
-    console.error(`  Mando Minutes: ${e.message}`);
-    return null;
+    console.error(`  Market news: ${e.message}`);
+    return [];
   }
 }
 
-// --- IPO watch ---
+// --- IPO watch (reuses shared news cache) ---
 async function fetchIPONews() {
-  let allNews = [];
-  try {
-    const general = await finnhub('/news?category=general');
-    allNews = general || [];
-  } catch (e) {
-    console.error(`  General news: ${e.message}`);
-  }
-
+  const allNews = await fetchAllNews().catch(() => []);
   const ipo = [];
   for (const company of IPO_WATCHLIST) {
     const matched = allNews.filter(n => {
@@ -250,9 +225,9 @@ async function main() {
   console.log('Fetching earnings...');
   const earnings = await fetchEarnings();
 
-  console.log('Fetching Mando Minutes...');
-  const mando = await fetchMandoMinutes();
-  if (mando) console.log(`  ${mando.title} - ${mando.sections.length} sections`);
+  console.log('Fetching market news...');
+  const news = await fetchMarketNews();
+  console.log(`  ${news.length} articles`);
 
   console.log('Fetching IPO watch...');
   const ipo_watch = await fetchIPONews();
@@ -266,7 +241,7 @@ async function main() {
   const fomc = buildFOMC();
   console.log(`  Next: ${fomc.next?.date} (${fomc.next?.days_until} days)`);
 
-  const result = { updated_at: new Date().toISOString(), stocks, crypto, earnings, mando, ipo_watch, btc_score, fomc };
+  const result = { updated_at: new Date().toISOString(), stocks, crypto, earnings, news, ipo_watch, btc_score, fomc };
 
   const dataDir = join(process.cwd(), 'data');
   if (!existsSync(dataDir)) mkdirSync(dataDir, { recursive: true });
