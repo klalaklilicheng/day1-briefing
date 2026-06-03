@@ -247,11 +247,14 @@ function buildFOMC() {
   };
 }
 
-// --- Twitter (authenticated via cookies) ---
+// --- Twitter (authenticated via cookies + GraphQL) ---
 const TWITTER_HANDLES = ['cburniske', 'QwQiao', 'saylor', 'viktorfischer'];
 const TW_AUTH = process.env.TWITTER_AUTH_TOKEN;
 const TW_CT0 = process.env.TWITTER_CT0;
 const TW_BEARER = 'AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA';
+// Query IDs from x.com main bundle — may need updating if Twitter changes them
+const QID_USER = 'IGgvgiOx4QZndDHuD3x9TQ';
+const QID_TWEETS = 'PNd0vlufvrcIwrAnBYKE9g';
 
 async function twitterApi(url) {
   const res = await fetch(url, {
@@ -261,6 +264,7 @@ async function twitterApi(url) {
       'x-csrf-token': TW_CT0,
       'x-twitter-active-user': 'yes',
       'x-twitter-auth-type': 'OAuth2Session',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
     },
   });
   if (!res.ok) throw new Error(`Twitter API ${res.status}`);
@@ -269,40 +273,50 @@ async function twitterApi(url) {
 
 async function getUserId(handle) {
   const vars = JSON.stringify({ screen_name: handle, withSafetyModeUserFields: true });
-  const features = JSON.stringify({ hidden_profile_subscriptions_enabled:true, rweb_tipjar_consumption_enabled:true, responsive_web_graphql_exclude_directive_enabled:true, verified_phone_label_enabled:false, subscriptions_verification_info_is_identity_verified_enabled:true, subscriptions_verification_info_verified_since_enabled:true, highlights_tweets_tab_ui_enabled:true, responsive_web_twitter_article_notes_tab_enabled:true, subscriptions_feature_can_gift_premium:true, creator_subscriptions_tweet_preview_api_enabled:true, responsive_web_graphql_skip_user_profile_image_extensions_enabled:false, responsive_web_graphql_timeline_navigation_enabled:true });
-  const url = `https://x.com/i/api/graphql/xmU6X_CKcnQ5lSrCbAmJsg/UserByScreenName?variables=${encodeURIComponent(vars)}&features=${encodeURIComponent(features)}`;
-  const data = await twitterApi(url);
+  const feat = JSON.stringify({ hidden_profile_subscriptions_enabled:true, responsive_web_graphql_exclude_directive_enabled:true, verified_phone_label_enabled:false, responsive_web_graphql_skip_user_profile_image_extensions_enabled:false, responsive_web_graphql_timeline_navigation_enabled:true });
+  const data = await twitterApi(`https://x.com/i/api/graphql/${QID_USER}/UserByScreenName?variables=${encodeURIComponent(vars)}&features=${encodeURIComponent(feat)}`);
   return data?.data?.user?.result?.rest_id;
 }
 
 async function getUserTweets(userId, handle) {
   const vars = JSON.stringify({ userId, count: 20, includePromotedContent: false, withQuickPromoteEligibilityTweetFields: true, withVoice: true, withV2Timeline: true });
-  const features = JSON.stringify({ rweb_tipjar_consumption_enabled:true, responsive_web_graphql_exclude_directive_enabled:true, verified_phone_label_enabled:false, creator_subscriptions_tweet_preview_api_enabled:true, responsive_web_graphql_timeline_navigation_enabled:true, responsive_web_graphql_skip_user_profile_image_extensions_enabled:false, c9s_tweet_anatomy_moderator_badge_enabled:true, tweetypie_unmention_optimization_enabled:true, responsive_web_edit_tweet_api_enabled:true, graphql_is_translatable_rweb_tweet_is_translatable_enabled:true, view_counts_everywhere_api_enabled:true, longform_notetweets_consumption_enabled:true, responsive_web_twitter_article_tweet_consumption_enabled:true, tweet_awards_web_tipping_enabled:false, freedom_of_speech_not_reach_fetch_enabled:true, standardized_nudges_misinfo:true, tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled:true, rweb_video_timestamps_enabled:true, longform_notetweets_rich_text_read_enabled:true, longform_notetweets_inline_media_enabled:true, responsive_web_enhance_cards_enabled:false });
-  const url = `https://x.com/i/api/graphql/Y4NfwBazXNbFO3AOS8qhpw/UserTweets?variables=${encodeURIComponent(vars)}&features=${encodeURIComponent(features)}`;
-  const data = await twitterApi(url);
+  const feat = JSON.stringify({ rweb_tipjar_consumption_enabled:true, responsive_web_graphql_exclude_directive_enabled:true, verified_phone_label_enabled:false, creator_subscriptions_tweet_preview_api_enabled:true, responsive_web_graphql_timeline_navigation_enabled:true, responsive_web_graphql_skip_user_profile_image_extensions_enabled:false });
+  const data = await twitterApi(`https://x.com/i/api/graphql/${QID_TWEETS}/UserTweets?variables=${encodeURIComponent(vars)}&features=${encodeURIComponent(feat)}`);
 
   const tweets = [];
-  const instructions = data?.data?.user?.result?.timeline_v2?.timeline?.instructions || [];
+  const result = data?.data?.user?.result || {};
+  const timeline = result.timeline_v2?.timeline || result.timeline?.timeline || {};
+  const instructions = timeline.instructions || [];
   for (const inst of instructions) {
     const entries = inst.entries || [];
+    if (inst.entry) entries.push(inst.entry);
     for (const entry of entries) {
-      const result = entry.content?.itemContent?.tweet_results?.result;
-      if (!result) continue;
-      const legacy = result.legacy || result.tweet?.legacy;
-      const core = result.core?.user_results?.result?.legacy || result.tweet?.core?.user_results?.result?.legacy;
-      if (!legacy) continue;
-      // Skip retweets
-      if (legacy.retweeted_status_result) continue;
-      tweets.push({
-        text: legacy.full_text || '',
-        url: `https://x.com/${handle}/status/${legacy.id_str}`,
-        time: legacy.created_at || '',
-        likes: legacy.favorite_count || 0,
-        retweets: legacy.retweet_count || 0,
-      });
+      const content = entry.content || {};
+      // Direct tweet
+      let tr = content.itemContent?.tweet_results?.result;
+      if (tr) extractTweet(tr, handle, tweets);
+      // Module items (e.g. conversation threads)
+      for (const it of content.items || []) {
+        tr = it.item?.itemContent?.tweet_results?.result;
+        if (tr) extractTweet(tr, handle, tweets);
+      }
     }
   }
   return tweets.sort((a, b) => new Date(b.time) - new Date(a.time)).slice(0, 5);
+}
+
+function extractTweet(tr, handle, tweets) {
+  if (tr.__typename === 'TweetWithVisibilityResults') tr = tr.tweet || {};
+  const legacy = tr.legacy;
+  if (!legacy?.full_text) return;
+  if (legacy.retweeted_status_result) return; // skip retweets
+  tweets.push({
+    text: legacy.full_text,
+    url: `https://x.com/${handle}/status/${legacy.id_str}`,
+    time: legacy.created_at || '',
+    likes: legacy.favorite_count || 0,
+    retweets: legacy.retweet_count || 0,
+  });
 }
 
 async function fetchTweets() {
