@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-03T06:39:59.483Z",
+  "updated_at": "2026-06-03T06:57:46.429Z",
   "stocks": [
     {
       "symbol": "VOO",
@@ -60,48 +60,48 @@
   "crypto": [
     {
       "symbol": "BTC",
-      "price": 67363,
-      "change_pct": -4.05
+      "price": 66976,
+      "change_pct": -4.32
     },
     {
       "symbol": "ETH",
-      "price": 1879.5,
-      "change_pct": -5.2
+      "price": 1870.48,
+      "change_pct": -5.47
     },
     {
       "symbol": "SOL",
-      "price": 75.05,
-      "change_pct": -5.64
+      "price": 74.87,
+      "change_pct": -5.72
     },
     {
       "symbol": "HYPE",
-      "price": 72.59,
-      "change_pct": 0.2
+      "price": 72.3,
+      "change_pct": 0.23
     },
     {
       "symbol": "ZEC",
-      "price": 618.43,
-      "change_pct": 12.76
+      "price": 612.74,
+      "change_pct": 11.73
     },
     {
       "symbol": "TAO",
-      "price": 235.01,
-      "change_pct": -7.62
+      "price": 234,
+      "change_pct": -6.88
     },
     {
       "symbol": "SKY",
-      "price": 1579.46,
-      "change_pct": 0.46
+      "price": 1570.82,
+      "change_pct": 0.24
     },
     {
       "symbol": "AAVE",
-      "price": 75.87,
-      "change_pct": -3.08
+      "price": 75.69,
+      "change_pct": -2.81
     },
     {
       "symbol": "BNB",
-      "price": 645,
-      "change_pct": -5.65
+      "price": 640.93,
+      "change_pct": -6.1
     }
   ],
   "earnings": {
@@ -484,7 +484,7 @@
     },
     {
       "headline": "卡尔达诺 TapTools 将在 5 名高管退出后停止运营",
-      "summary": "尽管计划关闭，TapTools 表示愿意被收购或利用外部资源来继续维护该平台。",
+      "summary": "尽管计划关闭，TapTools 表示它愿意被收购或利用外部资源来继续维护该平台。",
       "source": "Cointelegraph",
       "url": "https://cointelegraph.com/news/cardano-protocol-taptools-winds-down-after-five-execs-exit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "datetime": 1780454756,
@@ -529,7 +529,7 @@
     },
     {
       "headline": "美国立法者反对劳工部将加密货币纳入 401(k)s 的计划",
-      "summary": "三位国会议员表示，数字资产的波动性和“缺乏监管和保障措施”可能会使美国人的退休储蓄面临风险。",
+      "summary": "三名国会议员表示，数字资产的波动性和“缺乏监管和保障措施”可能会使美国人的退休储蓄面临风险。",
       "source": "Cointelegraph",
       "url": "https://cointelegraph.com/news/democrats-labor-department-digital-assets-retirement?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "datetime": 1780440259,
@@ -610,7 +610,7 @@
     },
     {
       "headline": "交易员称凯伦·巴斯和斯宾塞·普拉特将在备受瞩目的洛杉矶市长竞选中晋级决选",
-      "summary": "洛杉矶选民周二前往投票站。如果没有候选人获得超过 50%，得票最多的两名候选人将进入 11 月的决选。",
+      "summary": "洛杉矶选民周二前往投票站。如果没有候选人获得超过 50% 的支持，得票最多的两名候选人将进入 11 月的决选。",
       "source": "CNBC",
       "url": "https://www.cnbc.com/2026/06/02/bass-and-pratt-will-advance-in-la-mayoral-race-traders-say.html",
       "datetime": 1780430147,
@@ -721,7 +721,7 @@
     "suggestion": "市场偏冷，可适度布局",
     "daily_score": 12.6,
     "weekly_score": 17.5,
-    "btc_price": 67488.3,
+    "btc_price": 67099.4,
     "fear_greed": 25,
     "indicators": [
       {
@@ -733,7 +733,7 @@
       },
       {
         "name": "Funding Rate",
-        "value": 0.007428,
+        "value": 0.007015,
         "score": 49,
         "weight": 8,
         "group": "daily"
@@ -803,14 +803,14 @@
       },
       {
         "name": "周线 RSI",
-        "value": 34.8,
-        "score": 25,
+        "value": 34.5,
+        "score": 24,
         "weight": 5,
         "group": "weekly"
       },
       {
         "name": "成交量变化",
-        "value": 2.3,
+        "value": 3.3,
         "score": 46,
         "weight": 4,
         "group": "weekly"
@@ -842,9 +842,153 @@
     ]
   },
   "tweets": {
-    "cburniske": [],
-    "QwQiao": [],
-    "saylor": [],
-    "viktorfischer": []
+    "cburniske": [
+      {
+        "text": "I don’t see a new paradigm where majors are rotated out of, and select up-and-comers can sustain their swim against an outgoing tide for long. Instead, I think majors are telling us something, and people are finding reasons not to listen.",
+        "url": "https://x.com/cburniske/status/2059797889824776463",
+        "time": "Thu May 28 00:44:20 +0000 2026",
+        "likes": 878,
+        "retweets": 46
+      },
+      {
+        "text": "Saylor will get blamed but it was always in the cards.",
+        "url": "https://x.com/cburniske/status/2055411015568048375",
+        "time": "Fri May 15 22:12:28 +0000 2026",
+        "likes": 857,
+        "retweets": 43
+      },
+      {
+        "text": "Bitcoin is the most honest macro asset -- in its design, it serves as a forward looking mirror -- I wonder all the time about what it's trying to tell us lays ahead.",
+        "url": "https://x.com/cburniske/status/2054753557484908758",
+        "time": "Thu May 14 02:39:58 +0000 2026",
+        "likes": 795,
+        "retweets": 48
+      },
+      {
+        "text": "Although I nibbled my middle target ~a month ago (&lt; 5% of available cash), still expecting the bottom two targets to be tested in Q2 or Q3. Reminder that I always remain significantly long $BTC in some form, increasingly through ETFs, to maintain exposure and peace of mind.",
+        "url": "https://x.com/cburniske/status/2049546780052984236",
+        "time": "Wed Apr 29 17:50:05 +0000 2026",
+        "likes": 590,
+        "retweets": 32
+      },
+      {
+        "text": "You should never wait on me; be your own guru.",
+        "url": "https://x.com/cburniske/status/2022204995941392804",
+        "time": "Fri Feb 13 07:03:36 +0000 2026",
+        "likes": 316,
+        "retweets": 5
+      }
+    ],
+    "QwQiao": [
+      {
+        "text": "launching https://t.co/Ch0YJMtcQf a research tool for long term investors. \n\nit tracks every sec filing, earnings call, podcast, blog, insider trade, and superinvestor for stocks u follow. then extracts the most important insights so u dont have to read/watch the whole thing. https://t.co/dowwy6InAQ",
+        "url": "https://x.com/QwQiao/status/2060339507514269750",
+        "time": "Fri May 29 12:36:32 +0000 2026",
+        "likes": 570,
+        "retweets": 25
+      },
+      {
+        "text": "if u ever worry that zec is too consensus just look at the comments and the qts. meanwhile the risk:reward is a 1:10",
+        "url": "https://x.com/QwQiao/status/2057458193681326200",
+        "time": "Thu May 21 13:47:13 +0000 2026",
+        "likes": 66,
+        "retweets": 0
+      },
+      {
+        "text": "need the “flippening” narrative to put in a local top so i can buy more",
+        "url": "https://x.com/QwQiao/status/2057432209452052547",
+        "time": "Thu May 21 12:03:58 +0000 2026",
+        "likes": 59,
+        "retweets": 0
+      },
+      {
+        "text": "a conservative target for zec is to reach ~3-5% of btc, as  bitcoin holders rebalance a bit into zec as a hedge.\n\nan aggressive target is 15-20%. thats where silver is relative to gold.\n\nthe moonshot target is the flippening, in the unlikely event that something catastrophic",
+        "url": "https://x.com/QwQiao/status/2057429323607314794",
+        "time": "Thu May 21 11:52:30 +0000 2026",
+        "likes": 486,
+        "retweets": 42
+      },
+      {
+        "text": "track record this year (u can find my tweets):\n\nnailed the pico bottom for crypto\nzcash in the 200s\nanthropic (on @PreStocks) in jan\nhyperscalers and semis in jan\nignored iran war\n\nu r welcome",
+        "url": "https://x.com/QwQiao/status/2051982985017037099",
+        "time": "Wed May 06 11:10:42 +0000 2026",
+        "likes": 355,
+        "retweets": 10
+      }
+    ],
+    "saylor": [
+      {
+        "text": "Final week to vote for twice-monthly dividends. If you haven’t voted, please do so now. We believe this upgrade helps make Digital Credit better for $BTC, $MSTR, and $STRC. Please share with other holders. We need your support. https://t.co/0QObDgFH5w",
+        "url": "https://x.com/saylor/status/2061765101007286298",
+        "time": "Tue Jun 02 11:01:20 +0000 2026",
+        "likes": 4840,
+        "retweets": 546
+      },
+      {
+        "text": "Our goal is to make $STRC the best credit instrument in the world. https://t.co/gMhUlT3jXu",
+        "url": "https://x.com/saylor/status/2061443661620019475",
+        "time": "Mon Jun 01 13:44:03 +0000 2026",
+        "likes": 8889,
+        "retweets": 820
+      },
+      {
+        "text": "Stretch Dividend Rate maintained at 11.50% for June 2026. $STRC https://t.co/DZ55JRV1RV",
+        "url": "https://x.com/saylor/status/2061237787840458985",
+        "time": "Mon Jun 01 00:05:59 +0000 2026",
+        "likes": 5431,
+        "retweets": 497
+      },
+      {
+        "text": "Working ₿etter. https://t.co/VZJRdJKsEC",
+        "url": "https://x.com/saylor/status/2061071780026970217",
+        "time": "Sun May 31 13:06:19 +0000 2026",
+        "likes": 14444,
+        "retweets": 1583
+      },
+      {
+        "text": "Vitamin ₿\nhttps://t.co/JhvYnntDpB",
+        "url": "https://x.com/saylor/status/2060723145787453748",
+        "time": "Sat May 30 14:00:58 +0000 2026",
+        "likes": 9554,
+        "retweets": 916
+      }
+    ],
+    "viktorfischer": [
+      {
+        "text": "#1 in revenue. @solana 🚀",
+        "url": "https://x.com/viktorfischer/status/2061877090949947585",
+        "time": "Tue Jun 02 18:26:20 +0000 2026",
+        "likes": 10,
+        "retweets": 1
+      },
+      {
+        "text": "Would be cool to have tokenized pre-IPO @AnthropicAI on @PhoenixTrade - @0xShitTrader",
+        "url": "https://x.com/viktorfischer/status/2061872720820752641",
+        "time": "Tue Jun 02 18:08:59 +0000 2026",
+        "likes": 4,
+        "retweets": 0
+      },
+      {
+        "text": "#1 chain for tokenized equities @solana 🚀",
+        "url": "https://x.com/viktorfischer/status/2061871975945867714",
+        "time": "Tue Jun 02 18:06:01 +0000 2026",
+        "likes": 4,
+        "retweets": 0
+      },
+      {
+        "text": "Reinsurance is the RWA most used in Defi: users understand it generates stable uncorrelated yields to borrow against 🤑\n\nLeader is @onrefinance on @solana \n\nRWA is the way 🚀",
+        "url": "https://x.com/viktorfischer/status/2060271956289560726",
+        "time": "Fri May 29 08:08:07 +0000 2026",
+        "likes": 93,
+        "retweets": 9
+      },
+      {
+        "text": "Welcome David to @RockawayX 🚀",
+        "url": "https://x.com/viktorfischer/status/2060271464486424795",
+        "time": "Fri May 29 08:06:09 +0000 2026",
+        "likes": 38,
+        "retweets": 1
+      }
+    ]
   }
 }
