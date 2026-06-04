@@ -8,7 +8,7 @@ const EARNINGS_STOCKS = STOCKS.filter(s => !ETFS.has(s));
 const CRYPTO_MAP = {
   BTC: 'bitcoin', ETH: 'ethereum', SOL: 'solana', HYPE: 'hyperliquid',
   ZEC: 'zcash', TAO: 'bittensor', SKY: 'maker', AAVE: 'aave', BNB: 'binancecoin',
-  NEAR: 'near', DOGE: 'dogecoin', JITOSOL: 'jito-staked-sol',
+  NEAR: 'near', DOGE: 'dogecoin', SPACEX: 'spacex-prestocks-2',
 };
 
 const IPO_WATCHLIST = [
@@ -217,6 +217,51 @@ async function fetchIPONews() {
   return ipo;
 }
 
+// --- Portfolio news ---
+const PF_STOCKS = ['NVDA','GOOG','TSLA','CRCL','LKNCY'];
+const PF_CRYPTO_KW = { BTC:'bitcoin btc', ETH:'ethereum eth', SOL:'solana sol', AAVE:'aave', DOGE:'doge dogecoin', HYPE:'hyperliquid hype', TAO:'bittensor tao', NEAR:'near protocol', ZEC:'zcash zec', SPACEX:'spacex' };
+
+async function fetchPortfolioNews() {
+  const today = new Date().toISOString().slice(0, 10);
+  const monthAgo = new Date(Date.now() - 30 * 86400000).toISOString().slice(0, 10);
+  const news = {};
+
+  // Stock company news from Finnhub
+  for (const symbol of PF_STOCKS) {
+    try {
+      const items = await finnhub(`/company-news?symbol=${symbol}&from=${monthAgo}&to=${today}`);
+      news[symbol] = (items || []).slice(0, 3).map(n => ({
+        headline: n.headline, url: n.url, datetime: n.datetime, source: n.source || '',
+      }));
+    } catch (e) {
+      console.error(`  ${symbol} news: ${e.message}`);
+      news[symbol] = [];
+    }
+  }
+
+  // Crypto news from shared cache, filtered by keywords
+  const allNews = await fetchAllNews().catch(() => []);
+  for (const [symbol, kws] of Object.entries(PF_CRYPTO_KW)) {
+    const kwList = kws.split(' ');
+    news[symbol] = allNews.filter(n => {
+      const text = `${n.headline} ${n.summary}`.toLowerCase();
+      return kwList.some(kw => text.includes(kw));
+    }).slice(0, 3).map(n => ({
+      headline: n.headline, url: n.url, datetime: n.datetime, source: n.source || '',
+    }));
+  }
+
+  // Translate all headlines
+  const allH = Object.values(news).flatMap(arr => arr.map(n => n.headline));
+  if (allH.length) {
+    console.log(`  Translating ${allH.length} portfolio news headlines...`);
+    const zhH = await translateToZh(allH);
+    let k = 0;
+    for (const arr of Object.values(news)) for (const n of arr) n.headline = zhH[k++];
+  }
+  return news;
+}
+
 // --- BTC cycle score ---
 async function fetchBTCScore() {
   try {
@@ -397,10 +442,14 @@ async function main() {
   const fomc = buildFOMC();
   console.log(`  Next: ${fomc.next?.date} (${fomc.next?.days_until} days)`);
 
+  console.log('Fetching portfolio news...');
+  const portfolio_news = await fetchPortfolioNews();
+  console.log(`  ${Object.values(portfolio_news).flat().length} total articles`);
+
   console.log('Fetching tweets...');
   const tweets = await fetchTweets();
 
-  const result = { updated_at: new Date().toISOString(), stocks, crypto, earnings, news, ipo_watch, btc_score, fomc, tweets };
+  const result = { updated_at: new Date().toISOString(), stocks, crypto, earnings, news, ipo_watch, btc_score, fomc, tweets, portfolio_news };
 
   const dataDir = join(process.cwd(), 'data');
   if (!existsSync(dataDir)) mkdirSync(dataDir, { recursive: true });

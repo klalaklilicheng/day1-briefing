@@ -271,6 +271,15 @@
   .pf-table .pf-price { text-align: right; font-weight: 600; color: var(--text); font-variant-numeric: tabular-nums; }
   .pf-table .pf-change { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
   .pf-table .pf-note { font-size: 12px; color: var(--text-tertiary); font-style: italic; }
+  .pf-table .pf-news { padding: 4px 12px 12px; }
+  .pf-table .pf-news-item {
+    font-size: 12px; padding: 4px 0; display: flex; justify-content: space-between; gap: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .pf-table .pf-news-item:last-child { border-bottom: none; }
+  .pf-table .pf-news-item a { color: var(--text-secondary); flex: 1; }
+  .pf-table .pf-news-item a:hover { color: var(--accent); }
+  .pf-table .pf-news-item .pf-news-src { color: var(--text-tertiary); font-size: 11px; white-space: nowrap; }
   .pf-box {
     background: var(--bg-secondary); border: 1px solid var(--border);
     border-radius: var(--card-radius); padding: 20px; box-shadow: var(--shadow);
@@ -421,13 +430,13 @@ const PORTFOLIO = [
     { symbol: 'BTC', name: '比特币', type: 'crypto' },
     { symbol: 'ETH', name: '以太坊', type: 'crypto' },
     { symbol: 'SOL', name: 'Solana', type: 'crypto' },
-    { symbol: 'JITOSOL', name: 'JitoSOL', type: 'crypto' },
     { symbol: 'AAVE', name: 'Aave', type: 'crypto' },
     { symbol: 'DOGE', name: 'Dogecoin', type: 'crypto' },
     { symbol: 'HYPE', name: 'Hyperliquid', type: 'crypto' },
     { symbol: 'TAO', name: 'Bittensor', type: 'crypto' },
     { symbol: 'NEAR', name: 'Near Protocol', type: 'crypto' },
     { symbol: 'ZEC', name: 'Zcash', type: 'crypto' },
+    { symbol: 'SPACEX', name: 'SpaceX PreStocks', type: 'crypto' },
   ]},
   { group: '美股', items: [
     { symbol: 'NVDA', name: '英伟达', type: 'stock' },
@@ -437,8 +446,7 @@ const PORTFOLIO = [
     { symbol: 'LKNCY', name: '瑞幸咖啡', type: 'stock' },
   ]},
   { group: '其他', items: [
-    { symbol: 'SPACEX', name: 'SpaceX Pre-IPO', type: 'other', note: '未上市，无实时价格' },
-    { symbol: '9992.HK', name: '泡泡玛特', type: 'other', note: '港股' },
+    { symbol: '9992.HK', name: '泡泡玛特', type: 'other', note: '港股 · Finnhub免费版不支持' },
   ]},
 ];
 
@@ -600,30 +608,43 @@ function renderTweets(tweets) {
   }).join('');
 }
 
-function renderPortfolio(stocks, crypto) {
+function renderPortfolio(stocks, crypto, pfNews) {
   const priceMap = {};
   (stocks || []).forEach(s => { priceMap[s.symbol] = s; });
   (crypto || []).forEach(c => { priceMap[c.symbol] = c; });
+  const newsMap = pfNews || {};
 
   return PORTFOLIO.map(group => {
     const rows = group.items.map(item => {
       const p = priceMap[item.symbol];
+      const news = newsMap[item.symbol] || [];
+      let priceRow;
       if (p && !p.error) {
         const cls = p.change_pct > 0 ? 'up' : p.change_pct < 0 ? 'down' : 'flat';
         const sign = p.change_pct > 0 ? '+' : '';
         const fmt = p.price >= 1000 ? p.price.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2})
           : p.price < 0.01 ? p.price.toPrecision(4) : p.price.toFixed(2);
-        return `<tr>
+        priceRow = `<tr>
           <td><div class="pf-sym">${item.symbol}</div><div class="pf-name">${item.name}</div></td>
           <td class="pf-price">$${fmt}</td>
           <td class="pf-change ${cls}">${sign}${p.change_pct}%</td>
         </tr>`;
+      } else {
+        priceRow = `<tr>
+          <td><div class="pf-sym">${item.symbol}</div><div class="pf-name">${item.name}</div></td>
+          <td class="pf-price pf-note">${item.note || '—'}</td>
+          <td class="pf-change" style="color:var(--text-tertiary)">—</td>
+        </tr>`;
       }
-      return `<tr>
-        <td><div class="pf-sym">${item.symbol}</div><div class="pf-name">${item.name}</div></td>
-        <td class="pf-price pf-note">${item.note || '—'}</td>
-        <td class="pf-change" style="color:var(--text-tertiary)">—</td>
-      </tr>`;
+      // News row
+      if (news.length) {
+        const newsHtml = news.map(n => {
+          const d = n.datetime ? new Date(n.datetime * 1000).toLocaleDateString('zh-CN', {month:'short', day:'numeric'}) : '';
+          return `<div class="pf-news-item"><a href="${n.url}" target="_blank">${n.headline}</a><span class="pf-news-src">${n.source} ${d}</span></div>`;
+        }).join('');
+        priceRow += `<tr><td colspan="3" class="pf-news">${newsHtml}</td></tr>`;
+      }
+      return priceRow;
     }).join('');
     return `<div class="pf-group-title">${group.group}</div>
       <table class="pf-table"><thead><tr><th>标的</th><th>价格</th><th>涨跌</th></tr></thead>
@@ -647,7 +668,7 @@ async function load() {
     ['btc-score', () => d.btc_score ? renderBTCScore(d.btc_score) : null],
     ['earnings', () => d.earnings ? renderEarnings(d.earnings) : null],
     ['fomc', () => d.fomc ? renderFOMC(d.fomc) : null],
-    ['portfolio', () => renderPortfolio(d.stocks, d.crypto)],
+    ['portfolio', () => renderPortfolio(d.stocks, d.crypto, d.portfolio_news)],
     ['news', () => d.news ? renderNews(d.news) : null],
     ['ipo', () => d.ipo_watch ? renderIPO(d.ipo_watch) : null],
     ['tweets', () => d.tweets ? renderTweets(d.tweets) : null],
