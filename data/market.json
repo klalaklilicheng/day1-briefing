@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-03T23:06:44.153Z",
+  "updated_at": "2026-06-04T02:41:20.860Z",
   "stocks": [
     {
       "symbol": "VOO",
@@ -58,70 +58,70 @@
     },
     {
       "symbol": "LKNCY",
-      "price": 32.53,
-      "change_pct": 0.03
+      "price": 32.59,
+      "change_pct": 0.18
     }
   ],
   "crypto": [
     {
       "symbol": "BTC",
-      "price": 64577,
-      "change_pct": -2.89
+      "price": 63216,
+      "change_pct": -5.2
     },
     {
       "symbol": "ETH",
-      "price": 1820.48,
-      "change_pct": -2.5
+      "price": 1767.33,
+      "change_pct": -4.7
     },
     {
       "symbol": "SOL",
-      "price": 71.9,
-      "change_pct": -2.1
+      "price": 69.69,
+      "change_pct": -6.27
     },
     {
       "symbol": "HYPE",
-      "price": 74.45,
-      "change_pct": 8.25
+      "price": 72.96,
+      "change_pct": 4.94
     },
     {
       "symbol": "ZEC",
-      "price": 623.22,
-      "change_pct": 5.41
+      "price": 594.58,
+      "change_pct": -5.08
     },
     {
       "symbol": "TAO",
-      "price": 226.53,
-      "change_pct": -0.08
+      "price": 216.56,
+      "change_pct": -4.4
     },
     {
       "symbol": "SKY",
-      "price": 1579.8,
-      "change_pct": 2.07
+      "price": 1552.2,
+      "change_pct": -0.22
     },
     {
       "symbol": "AAVE",
-      "price": 74.76,
-      "change_pct": 2.09
+      "price": 71.38,
+      "change_pct": -3.51
     },
     {
       "symbol": "BNB",
-      "price": 625.83,
-      "change_pct": -3.75
+      "price": 606.67,
+      "change_pct": -5.97
     },
     {
       "symbol": "NEAR",
-      "price": 2.82,
-      "change_pct": 8.07
+      "price": 2.76,
+      "change_pct": 2.18
     },
     {
       "symbol": "DOGE",
-      "price": 0.091773,
-      "change_pct": -0.53
+      "price": 0.089129,
+      "change_pct": -3.78
     },
     {
-      "symbol": "JITOSOL",
-      "price": 92.07,
-      "change_pct": -2.28
+      "symbol": "SPACEX",
+      "price": 714.37,
+      "change_pct": -5.55
     }
   ],
   "earnings": {
@@ -474,6 +474,33 @@
   },
   "news": [
     {
+      "headline": "随着价格抛售加深，比特币自 2 月份以来首次跌破 63,000 美元",
+      "summary": "",
+      "source": "CoinDesk",
+      "url": "https://www.coindesk.com/markets/2026/06/04/bitcoin-selloff-continues-as-prices-slide-below-usd63-000-for-the-first-time-since-february",
+      "datetime": 1780536653,
+      "category": "crypto",
+      "related": ""
+    },
+    {
+      "headline": "比特币的呕吐仍在继续。回到接近 62K 美元",
+      "summary": "<p>我永远不会卖人......确实，哈哈：<a href=\"https://investinglive.com/Cryptocurrency/icymi-strategy-sells-bitcoin-for-first-time-since-2022-writing-never-sell-pledge-20260601/\" rel=\"follow\" target=\"_blank\">ICYMI！ Strategy自2022年以来首次出售比特币，打破“永不出售”承诺",
+      "source": "Forexlive",
+      "url": "https://investinglive.com/Cryptocurrency/the-bitcoin-puke-continues-back-near-62k-20260604/",
+      "datetime": 1780534296,
+      "category": "crypto",
+      "related": ""
+    },
+    {
+      "headline": "以色列税务机关对自愿披露加密货币感到“失望”：报告",
+      "summary": "该国税务局预计在自愿披露期内将报告价值数十亿美元的加密货币持有量，但最终只有 58 名申报者利用了这一程序。",
+      "source": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/israel-tax-authority-voluntary-crypto-reporting?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "datetime": 1780527603,
+      "category": "crypto",
+      "related": ""
+    },
+    {
       "headline": "比特币金库和流动性风险成为焦点 SpaceX目标IPO规模创纪录750亿美元",
       "summary": "",
       "source": "CoinDesk",
@@ -618,15 +645,6 @@
       "related": ""
     },
     {
-      "headline": "DL Holdings增资美国卡梅尔房地产基金，向股东额外赠送4,000万港元RWA",
-      "summary": "香港2026年6月3日 /美通社/ — DL Holdings（1709.HK）于6月2日宣布，已承诺出资500万美元认购ONE Carmel Estate Residence Lot A LPF的权益，该LPF是一家专注于美国房地产私人信贷投资的有限合伙基金。这代表了另一个策略",
-      "source": "Cryptocurrency News",
-      "url": "https://cryptocurrencynews.com/crypto/dl-holdings-increases-investment-in-u-s-carmel-real-estate-fund-gifting-additional-hk40-million-in-rwa-to-shareholders/",
-      "datetime": 1780503547,
-      "category": "crypto",
-      "related": ""
-    },
-    {
       "headline": "加密多空：美国消费者呢？",
       "summary": "",
       "source": "CoinDesk",
@@ -724,24 +742,6 @@
       "datetime": 1780497210,
       "category": "crypto",
       "related": ""
-    },
-    {
-      "headline": "价值178万美元的稀有实物比特币12年后兑现",
-      "summary": "",
-      "source": "CoinDesk",
-      "url": "https://www.coindesk.com/markets/2026/06/03/rare-physical-bitcoin-worth-usd1-78-million-gets-cashed-in-after-12-years",
-      "datetime": 1780497152,
-      "category": "crypto",
-      "related": ""
-    },
-    {
-      "headline": "尽管西方制裁，俄罗斯卢布稳定币 A7A5 仍在增长：CertiK",
-      "summary": "据 CertiK 称，尽管受到西方制裁，俄罗斯卢布支持的稳定币 A7A5 仍处理了超过 1100 亿美元的交易。",
-      "source": "Cointelegraph",
-      "url": "https://cointelegraph.com/news/russian-ruble-stablecoin-growing-western-sanctions-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "datetime": 1780495200,
-      "category": "crypto",
-      "related": ""
     }
   ],
   "ipo_watch": [
@@ -785,39 +785,39 @@
     }
   ],
   "btc_score": {
-    "score": 27.3,
-    "level": "恐慌",
-    "suggestion": "市场低估，适合分批建仓或加仓",
-    "daily_score": 12.4,
-    "weekly_score": 14.9,
-    "btc_price": 64940.1,
-    "fear_greed": 25,
+    "score": 31.1,
+    "level": "偏恐慌",
+    "suggestion": "市场偏冷，可适度布局",
+    "daily_score": 15.7,
+    "weekly_score": 15.4,
+    "btc_price": 63288,
+    "fear_greed": 23,
     "indicators": [
       {
         "name": "ETF 每日净流入",
-        "value": -519100000,
-        "score": 16,
+        "value": -54300000,
+        "score": 46,
         "weight": 12,
         "group": "daily"
       },
       {
         "name": "Funding Rate",
-        "value": 0.003471,
-        "score": 47,
+        "value": 0.000352,
+        "score": 45,
         "weight": 8,
         "group": "daily"
       },
       {
         "name": "多空比",
-        "value": 2.31,
+        "value": 2.17,
         "score": 100,
         "weight": 5,
         "group": "daily"
       },
       {
         "name": "恐惧贪婪指数",
-        "value": 25,
-        "score": 25,
+        "value": 23,
+        "score": 23,
         "weight": 7,
         "group": "daily"
       },
@@ -858,29 +858,29 @@
       },
       {
         "name": "365日均线倍数",
-        "value": 0.77,
-        "score": 18,
+        "value": 0.75,
+        "score": 17,
         "weight": 6,
         "group": "weekly"
       },
       {
         "name": "200周均线倍数",
-        "value": 1.08,
-        "score": 19,
+        "value": 1.04,
+        "score": 18,
         "weight": 6,
         "group": "weekly"
       },
       {
         "name": "周线 RSI",
-        "value": 32.9,
-        "score": 22,
+        "value": 31.7,
+        "score": 20,
         "weight": 5,
         "group": "weekly"
       },
       {
         "name": "成交量变化",
-        "value": -49.7,
-        "score": 31,
+        "value": 19.3,
+        "score": 50,
         "weight": 4,
         "group": "weekly"
       }
@@ -889,7 +889,7 @@
   "fomc": {
     "next": {
       "date": "2026-06-17",
-      "days_until": 14
+      "days_until": 13
     },
     "schedule": [
       "2025-01-29",
@@ -995,17 +995,24 @@
   "tweets": {
     "cburniske": [
       {
+        "text": "Early signs of emotional capitulation emerging, but far from apathy.",
+        "url": "https://x.com/cburniske/status/2062340385859580240",
+        "time": "Thu Jun 04 01:07:19 +0000 2026",
+        "likes": 588,
+        "retweets": 25
+      },
+      {
         "text": "I don’t see a new paradigm where majors are rotated out of, and select up-and-comers can sustain their swim against an outgoing tide for long. Instead, I think majors are telling us something, and people are finding reasons not to listen.",
         "url": "https://x.com/cburniske/status/2059797889824776463",
         "time": "Thu May 28 00:44:20 +0000 2026",
-        "likes": 880,
-        "retweets": 46
+        "likes": 882,
+        "retweets": 47
       },
       {
         "text": "Saylor will get blamed but it was always in the cards.",
         "url": "https://x.com/cburniske/status/2055411015568048375",
         "time": "Fri May 15 22:12:28 +0000 2026",
-        "likes": 863,
+        "likes": 864,
         "retweets": 45
       },
       {
@@ -1021,21 +1028,21 @@
         "time": "Wed Apr 29 17:50:05 +0000 2026",
         "likes": 591,
         "retweets": 32
-      },
-      {
-        "text": "You should never wait on me; be your own guru.",
-        "url": "https://x.com/cburniske/status/2022204995941392804",
-        "time": "Fri Feb 13 07:03:36 +0000 2026",
-        "likes": 316,
-        "retweets": 5
       }
     ],
     "QwQiao": [
       {
+        "text": "the lion is bidding",
+        "url": "https://x.com/QwQiao/status/2062353207951569017",
+        "time": "Thu Jun 04 01:58:16 +0000 2026",
+        "likes": 35,
+        "retweets": 1
+      },
+      {
         "text": "launching https://t.co/Ch0YJMtcQf a research tool for long term investors. \n\nit tracks every sec filing, earnings call, podcast, blog, insider trade, and superinvestor for stocks u follow. then extracts the most important insights so u dont have to read/watch the whole thing. https://t.co/dowwy6InAQ",
         "url": "https://x.com/QwQiao/status/2060339507514269750",
         "time": "Fri May 29 12:36:32 +0000 2026",
-        "likes": 570,
+        "likes": 571,
         "retweets": 24
       },
       {
@@ -1058,13 +1065,6 @@
         "time": "Thu May 21 11:52:30 +0000 2026",
         "likes": 486,
         "retweets": 42
-      },
-      {
-        "text": "track record this year (u can find my tweets):\n\nnailed the pico bottom for crypto\nzcash in the 200s\nanthropic (on @PreStocks) in jan\nhyperscalers and semis in jan\nignored iran war\n\nu r welcome",
-        "url": "https://x.com/QwQiao/status/2051982985017037099",
-        "time": "Wed May 06 11:10:42 +0000 2026",
-        "likes": 355,
-        "retweets": 10
       }
     ],
     "saylor": [
@@ -1072,36 +1072,36 @@
         "text": "₿ack to Work https://t.co/MmDLwySJpn",
         "url": "https://x.com/saylor/status/2062141855702155634",
         "time": "Wed Jun 03 11:58:25 +0000 2026",
-        "likes": 18673,
-        "retweets": 1538
+        "likes": 19916,
+        "retweets": 1625
       },
       {
         "text": "Final week to vote for twice-monthly dividends. If you haven’t voted, please do so now. We believe this upgrade helps make Digital Credit better for $BTC, $MSTR, and $STRC. Please share with other holders. We need your support. https://t.co/0QObDgFH5w",
         "url": "https://x.com/saylor/status/2061765101007286298",
         "time": "Tue Jun 02 11:01:20 +0000 2026",
-        "likes": 5104,
-        "retweets": 590
+        "likes": 5124,
+        "retweets": 593
       },
       {
         "text": "Our goal is to make $STRC the best credit instrument in the world. https://t.co/gMhUlT3jXu",
         "url": "https://x.com/saylor/status/2061443661620019475",
         "time": "Mon Jun 01 13:44:03 +0000 2026",
-        "likes": 9003,
+        "likes": 9004,
         "retweets": 835
       },
       {
         "text": "Stretch Dividend Rate maintained at 11.50% for June 2026. $STRC https://t.co/DZ55JRV1RV",
         "url": "https://x.com/saylor/status/2061237787840458985",
         "time": "Mon Jun 01 00:05:59 +0000 2026",
-        "likes": 5449,
-        "retweets": 503
+        "likes": 5450,
+        "retweets": 504
       },
       {
         "text": "Working ₿etter. https://t.co/VZJRdJKsEC",
         "url": "https://x.com/saylor/status/2061071780026970217",
         "time": "Sun May 31 13:06:19 +0000 2026",
         "likes": 14456,
-        "retweets": 1584
+        "retweets": 1586
       }
     ],
     "viktorfischer": [
@@ -1139,6 +1139,259 @@
         "time": "Tue Jun 02 18:06:01 +0000 2026",
         "likes": 5,
         "retweets": 0
+      }
+    ]
+  },
+  "portfolio_news": {
+    "NVDA": [
+      {
+        "headline": "台积电老板对前景持乐观态度，因为人工智能热潮没有放缓的迹象",
+        "url": "https://finnhub.io/api/news?id=80faaac7f221b981b902fd67eff1a1b6c71f1c940a3ff81d121dc6493385aee5",
+        "datetime": 1780537561,
+        "source": "Yahoo"
+      },
+      {
+        "headline": "为何超微电脑5月份股价暴涨68%",
+        "url": "https://finnhub.io/api/news?id=095ac10d3f99903739fb66662998cd02a01bc9b0c848fa5a9a7e0908425c41f8",
+        "datetime": 1780536349,
+        "source": "Yahoo"
+      },
+      {
+        "headline": "Nvidia 希望重塑 PC。这对英特尔、AMD 和高通意味着什么。",
+        "url": "https://finnhub.io/api/news?id=5363ee012ab81cdbbde02a9e8a2a71b3e46b9096587bac545f8dace4a0592cc8",
+        "datetime": 1780536180,
+        "source": "Yahoo"
+      }
+    ],
+    "GOOG": [
+      {
+        "headline": "格雷格·阿贝尔领导下的伯克希尔哈撒韦住房新时代遭遇人工智能投资转变",
+        "url": "https://finnhub.io/api/news?id=5caf5d1bb9904fe9adbc0d24aac38a2f72310c3e8f3ad672c4d4d2e0e70c80e6",
+        "datetime": 1780535223,
+        "source": "Yahoo"
+      },
+      {
+        "headline": "未来十年我会购买并持有的两只人工智能股票——即使是在今年的大涨之后",
+        "url": "https://finnhub.io/api/news?id=9856e467284fffd971f84dc3de612c1ac8645f9ed58f3a6f6f292546802bbdcd",
+        "datetime": 1780532580,
+        "source": "Yahoo"
+      },
+      {
+        "headline": "Meta猛烈抨击澳大利亚让科技巨头为新闻付费的做法",
+        "url": "https://finnhub.io/api/news?id=f166fdeadac1a2debb0b532dcdf9517eb03d852b0d6643a883ecf15a6df976e2",
+        "datetime": 1780531570,
+        "source": "Yahoo"
+      }
+    ],
+    "TSLA": [
+      {
+        "headline": "ASTS、RKLB、SPCE、RDW 股票隔夜扩大抛售——分析师支持“押注航天”贸易，杰富瑞青睐 SpaceX 熊市",
+        "url": "https://finnhub.io/api/news?id=14a7239ec0df919a9aed64db0faaff81a4a55dbdfe5bf48fd8ce50bea256310f",
+        "datetime": 1780537913,
+        "source": "Yahoo"
+      },
+      {
+        "headline": "埃隆·马斯克和特斯拉面临严重的新威胁",
+        "url": "https://finnhub.io/api/news?id=272ae4735966f3089e7d64b8cf1175629352d52b89c08ea1bb7f5dcfdc9da27f",
+        "datetime": 1780533420,
+        "source": "Yahoo"
+      },
+      {
+        "headline": "道琼斯指数录得自 3 月份以来最糟糕的一天，标准普尔 500 指数和纳斯达克指数在美伊交火后连涨——SNDK、TSLA、GOOGL、META、IREN 成为焦点",
+        "url": "https://finnhub.io/api/news?id=c92192cf5d045e812283f36ab753da84a9de89d2c86e688ead68c76fe19c7ab8",
+        "datetime": 1780530211,
+        "source": "Yahoo"
+      }
+    ],
+    "CRCL": [
+      {
+        "headline": "万事达卡扩大稳定币结算支持范围，包括 Ripple 的 RLUSD、Circle 的 USDC",
+        "url": "https://finnhub.io/api/news?id=ad66fb07863accbd94a49eefb247ba60201191eaece87461bcb7020d351521ed",
+        "datetime": 1780478378,
+        "source": "Benzinga"
+      },
+      {
+        "headline": "Anthropic 首次公开募股前需要考虑的 5 件事",
+        "url": "https://finnhub.io/api/news?id=880638a4129ae93ac08ded2f0b3f33f1fa2e8a4e1e318b8556d5bebe325c5efc",
+        "datetime": 1780473600,
+        "source": "SeekingAlpha"
+      },
+      {
+        "headline": "Coinbase 支持 DeFi 协议 Ethena，但 COIN 仍暴跌 5%",
+        "url": "https://finnhub.io/api/news?id=a96ce01e05485b62d1ce9ec716d2cb63346f684c1c3c511ffea509da4f3665ed",
+        "datetime": 1780410838,
+        "source": "Benzinga"
+      }
+    ],
+    "LKNCY": [
+      {
+        "headline": "为什么中国的资本监管和汉堡供应都变得更加严格",
+        "url": "https://finnhub.io/api/news?id=23c693962977076d9b411c8e07e9ba370898e99640651486ee4b7fdaa3efd170",
+        "datetime": 1780499716,
+        "source": "Benzinga"
+      },
+      {
+        "headline": "科技拉锯战：中美关系和创新竞赛",
+        "url": "https://finnhub.io/api/news?id=838de05c5e0acca5c4b2277053729caa92f62589b726a069abb2cf40d792315f",
+        "datetime": 1780236300,
+        "source": "SeekingAlpha"
+      },
+      {
+        "headline": "星巴克：卷土重来已开始，但增长故事尚未得到证实",
+        "url": "https://finnhub.io/api/news?id=52a877eeb70c388b4c9d913eeae7fdddfdf4f36197f92d07d7b72c16a9956999",
+        "datetime": 1778607528,
+        "source": "SeekingAlpha"
+      }
+    ],
+    "BTC": [
+      {
+        "headline": "随着价格抛售加深，比特币自 2 月份以来首次跌破 63,000 美元",
+        "url": "https://www.coindesk.com/markets/2026/06/04/bitcoin-selloff-continues-as-prices-slide-below-usd63-000-for-the-first-time-since-february",
+        "datetime": 1780536653,
+        "source": "CoinDesk"
+      },
+      {
+        "headline": "比特币的呕吐仍在继续。回到接近 62K 美元",
+        "url": "https://investinglive.com/Cryptocurrency/the-bitcoin-puke-continues-back-near-62k-20260604/",
+        "datetime": 1780534296,
+        "source": "Forexlive"
+      },
+      {
+        "headline": "比特币金库和流动性风险成为焦点 SpaceX目标IPO规模创纪录750亿美元",
+        "url": "https://www.coindesk.com/markets/2026/06/03/spacex-targets-record-usd75-billion-ipo-as-bitcoin-treasury-and-liquidity-risks-draw-focus",
+        "datetime": 1780525872,
+        "source": "CoinDesk"
+      }
+    ],
+    "ETH": [
+      {
+        "headline": "价格预测 6/3：BTC、ETH、BNB、XRP、SOL、HYPE、DOGE、ZEC、ADA、XLM",
+        "url": "https://cointelegraph.com/markets/price-predictions-63-btc-eth-bnb-xrp-sol-hype-doge-zec-ada-xlm?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "datetime": 1780520756,
+        "source": "Cointelegraph"
+      },
+      {
+        "headline": "随着以太坊跌破 1,800 美元，Bitmine 的以太坊押注损失接近 90 亿美元",
+        "url": "https://www.coindesk.com/markets/2026/06/03/bitmine-s-ethereum-bet-nears-usd9-billion-loss-as-ether-falls-below-usd1-800",
+        "datetime": 1780518831,
+        "source": "CoinDesk"
+      },
+      {
+        "headline": "以太坊跌至 14 周低点：ETH 价格能否守住 1800 美元支撑？",
+        "url": "https://cointelegraph.com/markets/ethereum-drops-to-14-week-lows-can-eth-price-hold-18k-support?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "datetime": 1780500759,
+        "source": "Cointelegraph"
+      }
+    ],
+    "SOL": [
+      {
+        "headline": "价格预测 6/3：BTC、ETH、BNB、XRP、SOL、HYPE、DOGE、ZEC、ADA、XLM",
+        "url": "https://cointelegraph.com/markets/price-predictions-63-btc-eth-bnb-xrp-sol-hype-doge-zec-ada-xlm?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "datetime": 1780520756,
+        "source": "Cointelegraph"
+      },
+      {
+        "headline": "吉姆·克莱默 (Jim Cramer) 周三股市最值得关注的 10 件事",
+        "url": "https://www.cnbc.com/2026/06/03/jim-cramers-top-10-things-to-watch-in-the-stock-market-wednesday-.html",
+        "datetime": 1780491942,
+        "source": "CNBC"
+      },
+      {
+        "headline": "ETH、SOL、DOGE 下跌 9%，看涨加密货币押注损失 16 亿美元",
+        "url": "https://www.coindesk.com/markets/2026/06/03/bullish-crypto-bets-lose-usd1-6-billion-as-eth-sol-doge-drop-9",
+        "datetime": 1780462800,
+        "source": "CoinDesk"
+      }
+    ],
+    "AAVE": [],
+    "DOGE": [
+      {
+        "headline": "价格预测 6/3：BTC、ETH、BNB、XRP、SOL、HYPE、DOGE、ZEC、ADA、XLM",
+        "url": "https://cointelegraph.com/markets/price-predictions-63-btc-eth-bnb-xrp-sol-hype-doge-zec-ada-xlm?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "datetime": 1780520756,
+        "source": "Cointelegraph"
+      },
+      {
+        "headline": "ETH、SOL、DOGE 下跌 9%，看涨加密货币押注损失 16 亿美元",
+        "url": "https://www.coindesk.com/markets/2026/06/03/bullish-crypto-bets-lose-usd1-6-billion-as-eth-sol-doge-drop-9",
+        "datetime": 1780462800,
+        "source": "CoinDesk"
+      }
+    ],
+    "HYPE": [
+      {
+        "headline": "价格预测 6/3：BTC、ETH、BNB、XRP、SOL、HYPE、DOGE、ZEC、ADA、XLM",
+        "url": "https://cointelegraph.com/markets/price-predictions-63-btc-eth-bnb-xrp-sol-hype-doge-zec-ada-xlm?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "datetime": 1780520756,
+        "source": "Cointelegraph"
+      },
+      {
+        "headline": "空头损失超过 4600 万美元后，超流动性空头转向看涨 HYPE",
+        "url": "https://cointelegraph.com/markets/hyperliquid-bear-turns-bullish-after-losing-over-46m-betting-on-hype-price-decline?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "datetime": 1780502440,
+        "source": "Cointelegraph"
+      },
+      {
+        "headline": "随着围绕 HYPE 的竞争加剧，Grayscale 推出费用最低的美国 Hyperliquid ETF",
+        "url": "https://www.coindesk.com/markets/2026/06/03/grayscale-launches-lowest-fee-u-s-hyperliquid-etf-as-competition-heats-up-around-hype",
+        "datetime": 1780488000,
+        "source": "CoinDesk"
+      }
+    ],
+    "TAO": [
+      {
+        "headline": "Bittensor 联合创始人表示，比特币的计算能力使排名前 100 的超级计算机相形见绌 60 万倍",
+        "url": "https://www.coindesk.com/tech/2026/06/02/bitcoin-s-compute-power-dwarfs-top-100-supercomputers-by-600-000x-says-bittensor-co-founder",
+        "datetime": 1780442744,
+        "source": "CoinDesk"
+      }
+    ],
+    "NEAR": [
+      {
+        "headline": "比特币的呕吐仍在继续。回到接近 62K 美元",
+        "url": "https://investinglive.com/Cryptocurrency/the-bitcoin-puke-continues-back-near-62k-20260604/",
+        "datetime": 1780534296,
+        "source": "Forexlive"
+      },
+      {
+        "headline": "价格预测 6/3：BTC、ETH、BNB、XRP、SOL、HYPE、DOGE、ZEC、ADA、XLM",
+        "url": "https://cointelegraph.com/markets/price-predictions-63-btc-eth-bnb-xrp-sol-hype-doge-zec-ada-xlm?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "datetime": 1780520756,
+        "source": "Cointelegraph"
+      },
+      {
+        "headline": "随着以太坊跌破 1,800 美元，Bitmine 的以太坊押注损失接近 90 亿美元",
+        "url": "https://www.coindesk.com/markets/2026/06/03/bitmine-s-ethereum-bet-nears-usd9-billion-loss-as-ether-falls-below-usd1-800",
+        "datetime": 1780518831,
+        "source": "CoinDesk"
+      }
+    ],
+    "ZEC": [
+      {
+        "headline": "价格预测 6/3：BTC、ETH、BNB、XRP、SOL、HYPE、DOGE、ZEC、ADA、XLM",
+        "url": "https://cointelegraph.com/markets/price-predictions-63-btc-eth-bnb-xrp-sol-hype-doge-zec-ada-xlm?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "datetime": 1780520756,
+        "source": "Cointelegraph"
+      },
+      {
+        "headline": "空头损失超过 4600 万美元后，超流动性空头转向看涨 HYPE",
+        "url": "https://cointelegraph.com/markets/hyperliquid-bear-turns-bullish-after-losing-over-46m-betting-on-hype-price-decline?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "datetime": 1780502440,
+        "source": "Cointelegraph"
+      },
+      {
+        "headline": "Zcash 在紧急网络升级后修复了 Orchard 错误",
+        "url": "https://cointelegraph.com/news/zcash-orchard-vulnerability-emergency-upgrade?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "datetime": 1780497210,
+        "source": "Cointelegraph"
+      }
+    ],
+    "SPACEX": [
+      {
+        "headline": "比特币金库和流动性风险成为焦点 SpaceX目标IPO规模创纪录750亿美元",
+        "url": "https://www.coindesk.com/markets/2026/06/03/spacex-targets-record-usd75-billion-ipo-as-bitcoin-treasury-and-liquidity-risks-draw-focus",
+        "datetime": 1780525872,
+        "source": "CoinDesk"
       }
     ]
   }
