@@ -236,7 +236,6 @@ const CRYPTO_TWITTER_ACCOUNTS = {
   SOL:  'solana',
   NEAR: 'NEARProtocol',
   AAVE: 'AaveAave',
-  TAO:  'opaboratory',
   ZEC:  'ElectricCoinCo',
   DOGE: 'dogecoin',
 };
