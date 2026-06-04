@@ -2,8 +2,7 @@ name: Update Market Data
 
 on:
   schedule:
-    - cron: '30 22 * * *'   # UTC 22:30 = Beijing 06:30
-    - cron: '0 13 * * 1-5'  # UTC 13:00 = Beijing 21:00 (US market hours)
+    - cron: '0 * * * *'     # Every hour
   workflow_dispatch:
 
 permissions:
