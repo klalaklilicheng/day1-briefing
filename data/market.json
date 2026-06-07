@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-07T17:08:12.430Z",
+  "updated_at": "2026-06-07T19:09:39.683Z",
   "stocks": [
     {
       "symbol": "VOO",
@@ -65,63 +65,63 @@
   "crypto": [
     {
       "symbol": "BTC",
-      "price": 62178,
-      "change_pct": 2.52
+      "price": 61671,
+      "change_pct": 1.61
     },
     {
       "symbol": "ETH",
-      "price": 1630.59,
-      "change_pct": 4.48
+      "price": 1617.54,
+      "change_pct": 3.6
     },
     {
       "symbol": "SOL",
-      "price": 65.26,
-      "change_pct": 5.32
+      "price": 64.49,
+      "change_pct": 4
     },
     {
       "symbol": "HYPE",
-      "price": 58.73,
-      "change_pct": 1.37
+      "price": 58.3,
+      "change_pct": 2.42
     },
     {
       "symbol": "ZEC",
-      "price": 418.3,
-      "change_pct": 17.24
+      "price": 409.55,
+      "change_pct": 14.23
     },
     {
       "symbol": "TAO",
-      "price": 210.21,
-      "change_pct": 7.32
+      "price": 207.19,
+      "change_pct": 6.63
     },
     {
       "symbol": "SKY",
-      "price": 1337.17,
-      "change_pct": 2.79
+      "price": 1322.22,
+      "change_pct": 2.18
     },
     {
       "symbol": "AAVE",
-      "price": 63.02,
-      "change_pct": 4.07
+      "price": 61.87,
+      "change_pct": 2.13
     },
     {
       "symbol": "BNB",
-      "price": 595.5,
-      "change_pct": 3.8
+      "price": 591.13,
+      "change_pct": 2.82
     },
     {
       "symbol": "NEAR",
-      "price": 2.05,
-      "change_pct": 8.76
+      "price": 2,
+      "change_pct": 6.66
     },
     {
       "symbol": "DOGE",
-      "price": 0.084935,
-      "change_pct": 4.74
+      "price": 0.083831,
+      "change_pct": 3.7
     },
     {
       "symbol": "SPACEX",
-      "price": 704.53,
-      "change_pct": 0.24
+      "price": 688.44,
+      "change_pct": -2.07
     }
   ],
   "earnings": {
@@ -474,6 +474,15 @@
   },
   "news": [
     {
+      "headline": "随着战略审查的加强，迈克尔·塞勒 (Michael Saylor) 重启比特币购买投机",
+      "summary": "",
+      "source": "CoinDesk",
+      "url": "https://www.coindesk.com/business/2026/06/06/michael-saylor-revives-bitcoin-buy-speculation-as-scrutiny-over-strategy-grows",
+      "datetime": 1780854117,
+      "category": "crypto",
+      "related": ""
+    },
+    {
       "headline": "Bybit 推出 IPO Express，成为首批提供代币化 IPO 通道的中心化加密货币交易所之一，从 SpaceX 开始",
       "summary": "阿联酋迪拜，2026 年 6 月 7 日 /美通社/ — 全球交易量第二大加密货币交易所 Bybit 今天宣布推出 Bybit IPO Express，成为全球首批以发行价提供代币化 IPO（首次公开募股）的中心化加密货币交易所之一",
       "source": "Cryptocurrency News",
@@ -733,15 +742,6 @@
       "datetime": 1780683470,
       "category": "crypto",
       "related": ""
-    },
-    {
-      "headline": "伊利诺伊州 2027 财年预算中的加密税距成为法律仅一步之遥",
-      "summary": "该法律是伊利诺伊州立法者通过的预算计划的一部分，将对注册经纪人征收 0.2% 的加密交易税。",
-      "source": "Cointelegraph",
-      "url": "https://cointelegraph.com/news/cryptocurrency-tax-illinois-fy2027-budget-law?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "datetime": 1780683059,
-      "category": "crypto",
-      "related": ""
     }
   ],
   "ipo_watch": [
@@ -806,12 +806,12 @@
     }
   ],
   "btc_score": {
-    "score": 26.5,
+    "score": 26.2,
     "level": "恐慌",
     "suggestion": "市场低估，适合分批建仓或加仓",
-    "daily_score": 13.2,
-    "weekly_score": 13.3,
-    "btc_price": 62254.3,
+    "daily_score": 13,
+    "weekly_score": 13.2,
+    "btc_price": 61625.8,
     "fear_greed": 13,
     "indicators": [
       {
@@ -823,15 +823,15 @@
       },
       {
         "name": "Funding Rate",
-        "value": 0.003304,
-        "score": 47,
+        "value": 0.001802,
+        "score": 46,
         "weight": 8,
         "group": "daily"
       },
       {
         "name": "多空比",
-        "value": 2,
-        "score": 100,
+        "value": 1.98,
+        "score": 99,
         "weight": 5,
         "group": "daily"
       },
@@ -893,15 +893,15 @@
       },
       {
         "name": "周线 RSI",
-        "value": 32.8,
-        "score": 21,
+        "value": 32.2,
+        "score": 20,
         "weight": 5,
         "group": "weekly"
       },
       {
         "name": "成交量变化",
-        "value": -98.2,
-        "score": 18,
+        "value": -94.5,
+        "score": 19,
         "weight": 4,
         "group": "weekly"
       }
@@ -1056,7 +1056,7 @@
         "text": "launching rectoandverso, an experiment where i write (very long form) essays the same way i write software.\n\ni architect, outline, then fire off a bunch of agents to research, write, and review. after the first draft is done, i iterate with ai line by line, paragraph by",
         "url": "https://x.com/QwQiao/status/2063568728323740054",
         "time": "Sun Jun 07 10:28:18 +0000 2026",
-        "likes": 119,
+        "likes": 128,
         "retweets": 5
       },
       {
@@ -1093,36 +1093,36 @@
         "text": "A good time to add more dots. https://t.co/4cRmmtbzKv",
         "url": "https://x.com/saylor/status/2063602383863660976",
         "time": "Sun Jun 07 12:42:02 +0000 2026",
-        "likes": 20866,
-        "retweets": 2050
+        "likes": 23475,
+        "retweets": 2296
       },
       {
         "text": "Bitcoin Fundamentalist: Bitcoin reaches its full potential by remaining true to its core principles: self-custody, personal nodes, decentralization, immutability, and use as money. Fundamentalists seek to protect Bitcoin from corruption, capture, or compromise.",
         "url": "https://x.com/saylor/status/2063441048743866463",
         "time": "Sun Jun 07 02:00:57 +0000 2026",
-        "likes": 4435,
-        "retweets": 384
+        "likes": 4522,
+        "retweets": 387
       },
       {
         "text": "Bitcoin Technologist: Bitcoin reaches its full potential through continuous base-layer improvement that enhances scalability, usability, privacy, functionality, security, integrity, and compatibility as needs and threats evolve.",
         "url": "https://x.com/saylor/status/2063395055176462606",
         "time": "Sat Jun 06 22:58:11 +0000 2026",
-        "likes": 3106,
+        "likes": 3160,
         "retweets": 274
       },
       {
         "text": "The AI buildout is absorbing capital at historic scale, creating temporary pressure across global markets. That does not weaken Bitcoin. It strengthens the case for scarce, liquid, digital capital. Bitcoin remains the premier asset for the long term. $BTC https://t.co/DMXidrHDB8",
         "url": "https://x.com/saylor/status/2063241214552420656",
         "time": "Sat Jun 06 12:46:53 +0000 2026",
-        "likes": 13012,
-        "retweets": 1570
+        "likes": 13129,
+        "retweets": 1580
       },
       {
         "text": "Four ideologies shape the Bitcoin community. Maximalists bring conviction. Capitalists bring integration. Technologists bring innovation. Fundamentalists bring preservation. Bitcoin reaches its full potential when these four forces work in harmony.",
         "url": "https://x.com/saylor/status/2062990041161355750",
         "time": "Fri Jun 05 20:08:48 +0000 2026",
-        "likes": 7704,
-        "retweets": 1127
+        "likes": 7724,
+        "retweets": 1130
       }
     ],
     "viktorfischer": [
@@ -1166,37 +1166,49 @@
   "portfolio_news": {
     "NVDA": [
       {
-        "headline": "为什么短期石油波动给予长期投资者永久购买埃克森美孚的千载难逢的礼物",
-        "url": "https://finnhub.io/api/news?id=7ed767b869e6e43a760db608d5e898ce294a9e28d638236f907a33f274043ad2",
-        "datetime": 1780847435,
+        "headline": "Nvidia 价值 5000 亿美元的人工智能机会成为现实",
+        "url": "https://finnhub.io/api/news?id=cf0061e9428028fdb9d40e5b97f483c5c080a486a3c0905215f296168980afe7",
+        "datetime": 1780854360,
         "source": "Yahoo"
       },
       {
-        "headline": "华尔街的汤姆·李 (Tom Lee) 表示，在飙升 3,000% 之前值得购买的一种不可阻挡的加密货币",
-        "url": "https://finnhub.io/api/news?id=91c82045d725421a778a5e9076f27f46c295787c3c576a4dd53dc5ef33677f1e",
-        "datetime": 1780847220,
+        "headline": "MSTX 较 2024 年 8 月峰值下跌 89%，周五的薪资打印显示杠杆衰减从未停止的原因",
+        "url": "https://finnhub.io/api/news?id=436f7acfd19874cb6ee118cb1b2efac0c133836c4ecff8b9f50b469d838ce687",
+        "datetime": 1780854358,
         "source": "Yahoo"
       },
       {
-        "headline": "第一季度业绩公布：雪佛龙将美国产量提高 24%，并向股东返还 60 亿美元。 CVX 股票现在值得买入吗？",
-        "url": "https://finnhub.io/api/news?id=787e3a91685fe80ebb9037ee6a1908d74765a532dff8664bd2e4865f2612535d",
-        "datetime": 1780846500,
+        "headline": "如果您 10 年前在 Meta Platforms 股票上投资 10,000 美元，那么您今天会拥有多少钱",
+        "url": "https://finnhub.io/api/news?id=b52a0015f591b28e86f89162a90ddde180fa206ab7e714b8daf2fda50c39be92",
+        "datetime": 1780854300,
         "source": "Yahoo"
       },
       {
-        "headline": "KORU 今年迄今已上涨 236%，但在一个交易日内价值仅损失了一半",
-        "url": "https://finnhub.io/api/news?id=eefeebec99103c505fcfa9506364a7d5f218b26dcd6c3c2a0c867e51bfef3410",
-        "datetime": 1780846226,
+        "headline": "忘掉 Wayfair：1 个值得永远购买并持有的大幅折扣消费巨头",
+        "url": "https://finnhub.io/api/news?id=8315335115f1801fa57586074485d7a0cc70b12dcdd10518cd1dcc3ccf8be8c0",
+        "datetime": 1780853829,
         "source": "Yahoo"
       },
       {
-        "headline": "投资者应该从博通最新财报中吸取的第一课",
-        "url": "https://finnhub.io/api/news?id=35d37892a0525077f0987877b00fd042b1df4ce9612a00f45daa713fcfe5b329",
-        "datetime": 1780845600,
+        "headline": "如果股市调整即将到来，这只 1 ETF 可能是目前最明智的买入",
+        "url": "https://finnhub.io/api/news?id=9dfd7374a4b27740eb88a8203e868308c29c02f8183ed5601ebe8a2e3b2dffcc",
+        "datetime": 1780853700,
         "source": "Yahoo"
       }
     ],
     "GOOG": [
+      {
+        "headline": "美元暴跌 17%，6 月 8 日情况可能更糟",
+        "url": "https://finnhub.io/api/news?id=8229d422b7e210447d82c47f2240a510da33067a8f7d3d4f327a5ea06d876f14",
+        "datetime": 1780852943,
+        "source": "Yahoo"
+      },
+      {
+        "headline": "马克·扎克伯格和梅塔面临裁员后的首次严峻考验",
+        "url": "https://finnhub.io/api/news?id=af2d2204ac91910ffa48015a833d9cf58ca61470b7bdc5b73b929a6e75f59051",
+        "datetime": 1780850820,
+        "source": "Yahoo"
+      },
       {
         "headline": "AECOM (ACM) 现在是一只值得买入的好股票吗？",
         "url": "https://finnhub.io/api/news?id=29793580ef1c26f1f2745e78c4e780fd39d4d69131ccb7331c98aa365122cb2c",
@@ -1213,18 +1225,6 @@
         "headline": "WWDC 2026 聚焦苹果的 AI 支点和服务估值",
         "url": "https://finnhub.io/api/news?id=f36bc591e5a5990359d9796567bb8a21ab85a50823052d8aaf75ceff40600753",
         "datetime": 1780841531,
-        "source": "Yahoo"
-      },
-      {
-        "headline": "道琼斯期货到期，市场反弹首次真正考验； SpaceX 首次公开募股、苹果、甲骨文领先",
-        "url": "https://finnhub.io/api/news?id=12ea0b695a26cddc608e0d4f5c1d00497e3eb8b48a383a89e5e35a0dbadbf926",
-        "datetime": 1780840764,
-        "source": "Yahoo"
-      },
-      {
-        "headline": "以下是未来 5 年内值得购买并持有的 5 只人工智能相关股票",
-        "url": "https://finnhub.io/api/news?id=b9a6de1d824fd68ab0b1e6e0b043d40fb49df4ded1e9e6a34abba94760a0906c",
-        "datetime": 1780840200,
         "source": "Yahoo"
       }
     ],
@@ -1308,6 +1308,12 @@
     ],
     "BTC": [
       {
+        "headline": "随着战略审查的加强，迈克尔·塞勒 (Michael Saylor) 重启比特币购买投机",
+        "url": "https://www.coindesk.com/business/2026/06/06/michael-saylor-revives-bitcoin-buy-speculation-as-scrutiny-over-strategy-grows",
+        "datetime": 1780854117,
+        "source": "CoinDesk"
+      },
+      {
         "headline": "与 2 月份相比，今天比特币接近 60,000 美元：机构情绪发生了转变",
         "url": "https://www.coindesk.com/markets/2026/06/07/bitcoin-near-usd60-000-today-vs-february-institutional-mood-is-starkly-different",
         "datetime": 1780848848,
@@ -1330,12 +1336,6 @@
         "url": "https://www.coindesk.com/markets/2026/06/06/bitcoin-ether-eye-worst-weekly-rout-since-ftx-collapse-as-cryptos-shed-usd390-billion",
         "datetime": 1780775934,
         "source": "CoinDesk"
-      },
-      {
-        "headline": "比特币自 2020 年崩盘以来最超卖：接下来 BTC 能否反弹至 7 万美元？",
-        "url": "https://cointelegraph.com/markets/bitcoin-most-oversold-since-2020-crash-can-btc-rebound-to-70k-next?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "datetime": 1780762014,
-        "source": "Cointelegraph"
       }
     ],
     "ETH": [
