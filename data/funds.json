@@ -241,6 +241,75 @@
           "confidence": "low"
         }
       ]
+    },
+    {
+      "id": "situational-awareness",
+      "name": "Situational Awareness LP",
+      "manager": "Leopold Aschenbrenner",
+      "source_url": "https://situational-awareness.ai",
+      "twitter": "",
+      "update_frequency": "季度更新 (13F)",
+      "last_updated": "2026-06-09",
+      "next_update": "2026-08",
+      "methodology": "用流动的全球上市公司表达 AGI 宏观主题,做多「瓶颈」、做空「过满/被替代」的一层。核心框架源自 Aschenbrenner 2024 年宣言《Situational Awareness: The Decade Ahead》—— Scaling laws 成立 → AGI 约 2027 年到来 → 约束是物理的(电力→算力→存储)而非算法的 → 市场在错误定价指数曲线。仓位结构: 做多被低估的电力+存储+机房瓶颈, 做空被高估/拥挤的逻辑芯片龙头层。2024年9月以约 $2.25 亿起步, Q1 2026 申报值约 $137 亿(含 puts 名义值),共 42 个仓位。",
+      "theses": [
+        {
+          "name": "电力/能源基础设施 (瓶颈①: 电)",
+          "status": "active",
+          "summary": "吉瓦级数据中心耗电超过小型国家,需要电网扩建、核电/天然气复兴。真正稀缺的不是芯片而是电力——就地发电(燃料电池、移动电源、燃机)可绕开并网排队,是最纯正的瓶颈标的。代表持仓: Bloom Energy(全基金最大多头 ~$934M)、Solaris Energy、T1 Energy、Power Solutions、Babcock & Wilcox、ProPetro。"
+        },
+        {
+          "name": "AI 算力/数据中心 & neocloud (瓶颈②: 算力)",
+          "status": "active",
+          "summary": "真正稀缺的资产是已锁定的电力+高密度机房。比特币矿企正从「BTC 算力」重估为「AI 托管产能」。基金在这一篮子上铺得很广,是对「谁能把电变成算力」的分散下注。代表持仓: CoreWeave(~$697M)、IREN、Core Scientific、Applied Digital、Riot、CleanSpark、Bitfarms、Bitdeer、WhiteFiber、Sharon AI、HIVE。"
+        },
+        {
+          "name": "存储超级周期 (瓶颈③: 内存)",
+          "status": "active",
+          "summary": "AI 推动 NAND/HBM 存储需求与提价。存储是 AI 服务器的第三大瓶颈。代表持仓: Sandisk(普通股+Call 合计 ~$1,113M,仅次于 Bloom Energy)、Micron(Call $422M,但同时持有 Put $584M 做对冲)。"
+        },
+        {
+          "name": "选择性做多晶圆/逻辑 (战术性)",
+          "status": "active",
+          "summary": "TSMC、Micron 等标的多空并存(Call + Put),更像价差/对冲结构而非单边看多。用看涨期权做战术性上行敞口,同时用看跌期权限制下行风险。"
+        },
+        {
+          "name": "做空层: 拥挤的芯片龙头 + AI 替代标的",
+          "status": "active",
+          "summary": "用 puts 做空已经把 AI 充分定价的最拥挤一层,作为对冲或押估值回撤。SMH ETF($2,043M)、NVIDIA($1,568M)、Oracle($1,073M)、Broadcom($1,006M)、AMD($969M) 为最大空头。同时做空 Infosys——唯一真正「short what AI eats」的标的(IT外包被AI替代)。整体构成相对价值对: 多瓶颈 vs 空龙头。"
+        }
+      ],
+      "positions": [
+        { "symbol": "BE", "name": "Bloom Energy", "theme": "电力/能源", "logic": "【多头 $934M】全基金最大多头; 燃料电池就地为数据中心供电,绕开并网排队,是电力瓶颈最纯正标的", "confidence": "high" },
+        { "symbol": "SNDK", "name": "Sandisk", "theme": "存储超级周期", "logic": "【多头 $1,113M】普通股$724M+Call$389M; 押注AI推动NAND/存储需求与提价", "confidence": "high" },
+        { "symbol": "CRWV", "name": "CoreWeave", "theme": "AI算力/neocloud", "logic": "【多头 $697M】普通股$556M+Call$141M; 纯AI云,直接拥有GPU算力出租能力", "confidence": "high" },
+        { "symbol": "MU", "name": "Micron", "theme": "存储/多空对冲", "logic": "【多空并存】Call$422M+普通股$6M vs Put$584M; HBM/存储是AI服务器瓶颈,但同时用Put对冲", "confidence": "high" },
+        { "symbol": "IREN", "name": "IREN", "theme": "AI算力/neocloud", "logic": "【多头 $401M】矿企转型AI托管,已锁定电力+高密度机房", "confidence": "high" },
+        { "symbol": "CORZ", "name": "Core Scientific", "theme": "AI算力/neocloud", "logic": "【多头 $389M】从BTC算力重估为AI托管产能", "confidence": "high" },
+        { "symbol": "TSM", "name": "台积电 TSMC", "theme": "晶圆/多空对冲", "logic": "【多空并存】Call$355M+普通股$8M vs Put$535M; 价差/对冲结构而非单边", "confidence": "high" },
+        { "symbol": "APLD", "name": "Applied Digital", "theme": "AI算力/neocloud", "logic": "【多头 $320M】数据中心/AI托管", "confidence": "high" },
+        { "symbol": "RIOT", "name": "Riot Platforms", "theme": "AI算力/neocloud", "logic": "【多头 $142M】矿企转型,把电变成算力", "confidence": "high" },
+        { "symbol": "CLSK", "name": "CleanSpark", "theme": "AI算力/neocloud", "logic": "【多头 $105M】矿企转型AI托管", "confidence": "high" },
+        { "symbol": "SEI", "name": "Solaris Energy Infra", "theme": "电力/能源", "logic": "【多头 $63M】现场发电/移动电源,就地电力设备超级周期", "confidence": "high" },
+        { "symbol": "TE", "name": "T1 Energy", "theme": "电力/能源", "logic": "【多头 $44M】移动电源/现场发电设备", "confidence": "high" },
+        { "symbol": "BITF", "name": "Bitfarms", "theme": "AI算力/neocloud", "logic": "【多头 $39M】矿企转型,锁定电力资源", "confidence": "medium" },
+        { "symbol": "BTDR", "name": "Bitdeer", "theme": "AI算力/neocloud", "logic": "【多头 $30M】矿企转型AI托管", "confidence": "medium" },
+        { "symbol": "PSIX", "name": "Power Solutions Intl", "theme": "电力/能源", "logic": "【多头 $26M】燃机/发电设备,就地电力", "confidence": "medium" },
+        { "symbol": "GLW", "name": "Corning", "theme": "多空对冲", "logic": "【多空并存】普通股$21M vs Put$21M; 对冲结构", "confidence": "medium" },
+        { "symbol": "WYFI", "name": "WhiteFiber", "theme": "AI算力/neocloud", "logic": "【多头 $21M】数据中心基础设施", "confidence": "medium" },
+        { "symbol": "BW", "name": "Babcock & Wilcox", "theme": "电力/能源", "logic": "【多头 $20M】锅炉/能源设备,数据中心供电", "confidence": "medium" },
+        { "symbol": "AMD", "name": "AMD", "theme": "做空层/多空对冲", "logic": "【净空 $949M】Put$969M vs 普通股$20M; AI定价拥挤,估值回撤对冲", "confidence": "high" },
+        { "symbol": "SAIH", "name": "Sharon AI", "theme": "AI算力/neocloud", "logic": "【多头 $18M】AI基础设施", "confidence": "medium" },
+        { "symbol": "PUMP", "name": "ProPetro", "theme": "电力/能源", "logic": "【多头 $13M】油服/天然气压裂,给数据中心供气发电的上游", "confidence": "medium" },
+        { "symbol": "INTC", "name": "Intel", "theme": "做空层/多空对冲", "logic": "【净空 $150M】Put$159M vs 普通股$9M", "confidence": "high" },
+        { "symbol": "HIVE", "name": "HIVE Digital", "theme": "AI算力/neocloud", "logic": "【多头 $6M】矿企转型", "confidence": "low" },
+        { "symbol": "SMH", "name": "VanEck Semiconductor ETF", "theme": "做空层", "logic": "【空头 $2,043M】全基金最大空头; 半导体龙头ETF,押注AI最拥挤一层估值回撤", "confidence": "high" },
+        { "symbol": "NVDA", "name": "NVIDIA", "theme": "做空层", "logic": "【空头 $1,568M】AI定价最拥挤,用Put对冲/押回撤", "confidence": "high" },
+        { "symbol": "ORCL", "name": "Oracle", "theme": "做空层", "logic": "【空头 $1,073M】Put; 云/AI定价过满", "confidence": "high" },
+        { "symbol": "AVGO", "name": "Broadcom", "theme": "做空层", "logic": "【空头 $1,006M】Put; 算力龙头层对冲", "confidence": "high" },
+        { "symbol": "ASML", "name": "ASML", "theme": "做空层/多空对冲", "logic": "【净空 $488M】Put$494M vs 普通股$6M; 半导体设备龙头对冲", "confidence": "high" },
+        { "symbol": "INFY", "name": "Infosys", "theme": "做空层", "logic": "【空头 $7M】唯一真正'short what AI eats'标的; IT外包服务被AI替代", "confidence": "high" }
+      ]
     }
   ]
 }
