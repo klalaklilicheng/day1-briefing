@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-09T23:14:35.518Z",
+  "updated_at": "2026-06-10T02:40:20.393Z",
   "stocks": [
     {
       "symbol": "VOO",
@@ -58,70 +58,70 @@
     },
     {
       "symbol": "LKNCY",
-      "price": 30.61,
-      "change_pct": -4.7
+      "price": 31.2,
+      "change_pct": 1.93
     }
   ],
   "crypto": [
     {
       "symbol": "BTC",
-      "price": 61679,
-      "change_pct": -2.92
+      "price": 61357,
+      "change_pct": -1.9
     },
     {
       "symbol": "ETH",
-      "price": 1637.12,
-      "change_pct": -4.3
+      "price": 1624.09,
+      "change_pct": -1.92
     },
     {
       "symbol": "SOL",
-      "price": 64.87,
-      "change_pct": -3.54
+      "price": 64.39,
+      "change_pct": -2.16
     },
     {
       "symbol": "HYPE",
-      "price": 57.49,
-      "change_pct": -9.4
+      "price": 55.91,
+      "change_pct": -10.29
     },
     {
       "symbol": "ZEC",
-      "price": 425.67,
-      "change_pct": -7.65
+      "price": 429.81,
+      "change_pct": -3.64
     },
     {
       "symbol": "TAO",
-      "price": 205.2,
-      "change_pct": -5.48
+      "price": 205.9,
+      "change_pct": -2.69
     },
     {
       "symbol": "SKY",
-      "price": 1286.2,
-      "change_pct": -6.87
+      "price": 1276.56,
+      "change_pct": -4.18
     },
     {
       "symbol": "AAVE",
-      "price": 61.97,
-      "change_pct": -3.37
+      "price": 61.57,
+      "change_pct": -0.86
     },
     {
       "symbol": "BNB",
-      "price": 592.33,
-      "change_pct": -2.37
+      "price": 587.95,
+      "change_pct": -1.2
     },
     {
       "symbol": "NEAR",
       "price": 2.15,
-      "change_pct": 0.85
+      "change_pct": 4.42
     },
     {
       "symbol": "DOGE",
-      "price": 0.084518,
-      "change_pct": -2.89
+      "price": 0.083965,
+      "change_pct": -0.89
     },
     {
       "symbol": "SPACEX",
-      "price": 711.1,
-      "change_pct": 1.51
+      "price": 712.07,
+      "change_pct": -1.6
     }
   ],
   "earnings": {
@@ -807,39 +807,39 @@
     }
   ],
   "btc_score": {
-    "score": 33.8,
+    "score": 33.9,
     "level": "偏恐慌",
     "suggestion": "市场偏冷，可适度布局",
-    "daily_score": 15,
-    "weekly_score": 18.8,
-    "btc_price": 61762.1,
-    "fear_greed": 15,
+    "daily_score": 15.3,
+    "weekly_score": 18.6,
+    "btc_price": 61340.4,
+    "fear_greed": 14,
     "indicators": [
       {
         "name": "ETF 每日净流入",
-        "value": -91400000,
-        "score": 44,
+        "value": -15795554.75,
+        "score": 49,
         "weight": 12,
         "group": "daily"
       },
       {
         "name": "Funding Rate",
-        "value": 0.001468,
-        "score": 46,
+        "value": -0.00434,
+        "score": 43,
         "weight": 8,
         "group": "daily"
       },
       {
         "name": "多空比",
-        "value": 2.09,
+        "value": 2.03,
         "score": 100,
         "weight": 5,
         "group": "daily"
       },
       {
         "name": "恐惧贪婪指数",
-        "value": 15,
-        "score": 15,
+        "value": 14,
+        "score": 14,
         "weight": 7,
         "group": "daily"
       },
@@ -880,28 +880,28 @@
       },
       {
         "name": "365日均线倍数",
-        "value": 0.69,
-        "score": 13,
+        "value": 0.67,
+        "score": 11,
         "weight": 6,
         "group": "weekly"
       },
       {
         "name": "200周均线倍数",
-        "value": 1.02,
+        "value": 1,
         "score": 17,
         "weight": 6,
         "group": "weekly"
       },
       {
         "name": "周线 RSI",
-        "value": 32.3,
+        "value": 32,
         "score": 20,
         "weight": 5,
         "group": "weekly"
       },
       {
         "name": "成交量变化",
-        "value": 228.6,
+        "value": 234,
         "score": 100,
         "weight": 4,
         "group": "weekly"
@@ -911,7 +911,7 @@
   "fomc": {
     "next": {
       "date": "2026-06-17",
-      "days_until": 8
+      "days_until": 7
     },
     "schedule": [
       "2025-01-29",
@@ -1034,7 +1034,7 @@
         "text": "Saylor will get blamed but it was always in the cards.",
         "url": "https://x.com/cburniske/status/2055411015568048375",
         "time": "Fri May 15 22:12:28 +0000 2026",
-        "likes": 883,
+        "likes": 884,
         "retweets": 48
       },
       {
@@ -1071,7 +1071,7 @@
         "text": "the lion is bidding",
         "url": "https://x.com/QwQiao/status/2062353207951569017",
         "time": "Thu Jun 04 01:58:16 +0000 2026",
-        "likes": 195,
+        "likes": 196,
         "retweets": 8
       },
       {
@@ -1094,36 +1094,36 @@
         "text": "₿usiness is Good. https://t.co/yXuaDxGeay",
         "url": "https://x.com/saylor/status/2064357330599252462",
         "time": "Tue Jun 09 14:41:56 +0000 2026",
-        "likes": 11220,
-        "retweets": 887
+        "likes": 12010,
+        "retweets": 966
       },
       {
         "text": "$STRC and $MSTR shareholders have approved the amendment to move $STRC dividends from monthly to semi-monthly. Under the new cadence, the first record date is June 30 and the first payment date is July 15. Thank you to every shareholder who voted. https://t.co/3sIqqF3FCR",
         "url": "https://x.com/saylor/status/2063989759559495774",
         "time": "Mon Jun 08 14:21:20 +0000 2026",
-        "likes": 11215,
-        "retweets": 1087
+        "likes": 11258,
+        "retweets": 1090
       },
       {
         "text": "Strategy has acquired 1,550 BTC for $101 million to increase our $BTC Reserve to ₿845,256. We have also increased our USD Reserve by $100 million to $1.0 billion. $MSTR $STRC https://t.co/1Zf1AVsP1H",
         "url": "https://x.com/saylor/status/2063954606879543589",
         "time": "Mon Jun 08 12:01:39 +0000 2026",
-        "likes": 31279,
-        "retweets": 3997
+        "likes": 31375,
+        "retweets": 4024
       },
       {
         "text": "32?",
         "url": "https://x.com/saylor/status/2063731803312001111",
         "time": "Sun Jun 07 21:16:18 +0000 2026",
-        "likes": 22041,
-        "retweets": 1578
+        "likes": 22048,
+        "retweets": 1579
       },
       {
         "text": "A good time to add more dots. https://t.co/4cRmmtbzKv",
         "url": "https://x.com/saylor/status/2063602383863660976",
         "time": "Sun Jun 07 12:42:02 +0000 2026",
-        "likes": 30673,
-        "retweets": 3010
+        "likes": 30679,
+        "retweets": 3011
       }
     ],
     "viktorfischer": [
@@ -1167,97 +1167,97 @@
   "portfolio_news": {
     "NVDA": [
       {
-        "headline": "为什么 Signet Jewelers 股票周二大涨",
-        "url": "https://finnhub.io/api/news?id=9dd6576999838c1d582686419df366e355dbd441a921523a5252db6a5d6b1ff2",
-        "datetime": 1781041428,
+        "headline": "担心购买哪只人工智能股票？这款低成本 ETF 让您拥有整个交易。",
+        "url": "https://finnhub.io/api/news?id=5f842c026f0b976b75fc18ba7486c40ebe4c1380ffb16e20f65c50c3b8ba4df1",
+        "datetime": 1781054760,
         "source": "Yahoo"
       },
       {
-        "headline": "道琼斯期货因伊朗消息而下跌，市场遭受重创； CPI 通胀即将到来",
-        "url": "https://finnhub.io/api/news?id=8b3d7a3d252224686a40b23dd117441419faf253d807fb6bd54af90da600bf83",
-        "datetime": 1781041230,
+        "headline": "为什么 SSR 矿业股票今天受到打击",
+        "url": "https://finnhub.io/api/news?id=83f6182fb0ea8428e59d4de90405e2ce1cf8fb4a95c3ff6c4bc076601a711aaf",
+        "datetime": 1781050704,
         "source": "Yahoo"
       },
       {
-        "headline": "标准普尔 500 指数可能会发生重大变化。这对投资者意味着什么",
-        "url": "https://finnhub.io/api/news?id=06c1c9999bd43265a35c7490d06038a99abebb9b0f97bbc1d408a07c47eb0584",
-        "datetime": 1781040468,
+        "headline": "特斯拉中国销量猛增 22%，结束了两个月的低迷。逆转是真的吗？",
+        "url": "https://finnhub.io/api/news?id=ff49918f5c74c088adfba5f6878cd869649f31b21e6b02102737f1edab672946",
+        "datetime": 1781048760,
         "source": "Yahoo"
       },
       {
-        "headline": "资深对冲基金经理：Anthropic 的目标是 5000 亿美元的市场机会，因为“单独编码已经完全起飞”",
-        "url": "https://finnhub.io/api/news?id=cb39c09f49196ec91cdfa10035609414b04ecfee45d7cb3571708c8399ecc4b5",
-        "datetime": 1781040452,
+        "headline": "为什么 Ciena 股价周二暴跌近 6%",
+        "url": "https://finnhub.io/api/news?id=e3e2c282d774eeb16481b1b00c576b29fd13a1e08b597c723394e24ee0372581",
+        "datetime": 1781047877,
         "source": "Yahoo"
       },
       {
-        "headline": "新投资者：3只坚如磐石的股票来构建您的投资组合",
-        "url": "https://finnhub.io/api/news?id=8c02421cadc78818ce1f2e5faeb4c1e3456535976c2626b7432fe7e8efec46cd",
-        "datetime": 1781040000,
+        "headline": "Nvidia (NVDA) 与 SK 集团宣布扩大人工智能和半导体合作伙伴关系",
+        "url": "https://finnhub.io/api/news?id=c82bcf94ba6ecb64a0beb77d28cef60480f8899915ba638a1404d63e1e91d621",
+        "datetime": 1781047273,
         "source": "Yahoo"
       }
     ],
     "GOOG": [
       {
-        "headline": "今日股市，6 月 9 日：Siri AI 更新引发 iPhone 升级问题，苹果股价下跌",
-        "url": "https://finnhub.io/api/news?id=86a5b5323f902cb27188c45f9d70d86898bada13092e4fbfce56406a6e08fffd",
-        "datetime": 1781041257,
+        "headline": "AST SpaceMobile 推出 BlueBird Trio 作为主要投资者的转折点",
+        "url": "https://finnhub.io/api/news?id=a1bb2dd440ac755a7f2294eb39eef1476bed46d9053c3b135522c60d6ef3ee0f",
+        "datetime": 1781050611,
         "source": "Yahoo"
       },
       {
-        "headline": "今日股市，6 月 9 日：Uber 大宗出售打压自动驾驶卡车股票后，Aurora Innovation 股价下跌",
-        "url": "https://finnhub.io/api/news?id=b8611061c8847fa7133ec37c9a865b4c0340ff0e5639e8fc823cabb1f33ab31b",
-        "datetime": 1781041161,
+        "headline": "AppLovin 大力宣传 AXON 引领的增长、消费者广告扩张和回购",
+        "url": "https://finnhub.io/api/news?id=3fb86ba92adbfcef687c90b9c83cead3ec4d964893469dff2d1495a8b2d6207c",
+        "datetime": 1781046214,
         "source": "Yahoo"
       },
       {
-        "headline": "人工智能股引领科技板块下滑。 “夏季晕眩已经到来。”",
-        "url": "https://finnhub.io/api/news?id=4efcf962ba3527ad445befd701ed8ecaffd224e92853239883a4424e2dec9d8b",
-        "datetime": 1781037539,
+        "headline": "苹果将通过谷歌云在 Nvidia GPU 上运行高级人工智能模型，放弃私有基础设施",
+        "url": "https://finnhub.io/api/news?id=cc12af87a5b85d6fe4ec0d2e74fad694d929a4b2b57912d81dd677ea4064aef0",
+        "datetime": 1781043960,
         "source": "Yahoo"
       },
       {
-        "headline": "摩根大通重置博通股价目标",
-        "url": "https://finnhub.io/api/news?id=b4147b71b3bda8510fb05e59a3e3bbe72b2c9d3c74ba9071465c2e183f63dd7f",
-        "datetime": 1781037180,
+        "headline": "Alphabet 的人工智能支出、Waymo 扩张和搜索转变影响估值",
+        "url": "https://finnhub.io/api/news?id=3f937d8c4e719fdd4b2337bc3df9d6007ca93c195707985a13246691e5fd3b3d",
+        "datetime": 1781043440,
         "source": "Yahoo"
       },
       {
-        "headline": "IPO 前 SpaceX 与 Alphabet 的大规模计算交易意味着什么",
-        "url": "https://finnhub.io/api/news?id=d682f49f8241a71596dfdc34313c3e9da63c4883dcb2381df7a17e427a9ac635",
-        "datetime": 1781036220,
+        "headline": "未来 12 个月内影响 IGPT 成败的资本支出信号",
+        "url": "https://finnhub.io/api/news?id=d6b0071b11b0f06c3373b7cb7986ca46af7423147a2c82708ba317df49e0804f",
+        "datetime": 1781043080,
         "source": "Yahoo"
       }
     ],
     "TSLA": [
       {
-        "headline": "今日股市，6 月 9 日：Uber 大宗出售打压自动驾驶卡车股票后，Aurora Innovation 股价下跌",
-        "url": "https://finnhub.io/api/news?id=b8611061c8847fa7133ec37c9a865b4c0340ff0e5639e8fc823cabb1f33ab31b",
-        "datetime": 1781041161,
+        "headline": "继 DOGE 和政治之后，埃隆·马斯克 (Elon Musk) 押注 SpaceX IPO",
+        "url": "https://finnhub.io/api/news?id=236308615ea40056a60f6ee3b53cc5ed24b8047fbcdf46119943e07e04bc56f5",
+        "datetime": 1781055102,
         "source": "Yahoo"
       },
       {
-        "headline": "距离 SpaceX 首次公开募股还有几天了。以下是如何准备。",
-        "url": "https://finnhub.io/api/news?id=ec9dcf976fdb4fd0918708a2fad4985228eda427ec10ce68ccc3b63007fb2e5a",
-        "datetime": 1781038200,
+        "headline": "通用汽车效仿特斯拉的做法——与 Peak 合作进军储能领域",
+        "url": "https://finnhub.io/api/news?id=35b69f07c3cb0cdf7f064785e972c200f74add3e2ba19d0ca8094d9e3aeea49b",
+        "datetime": 1781049949,
         "source": "Yahoo"
       },
       {
-        "headline": "为什么埃隆·马斯克未兑现承诺的记录对投资者很重要",
-        "url": "https://finnhub.io/api/news?id=5bd6b9d31f2a7f6230676cf527bb877f72c4dd26cd157cf708f4691d45294c6b",
-        "datetime": 1781037315,
+        "headline": "特斯拉中国销量猛增 22%，结束了两个月的低迷。逆转是真的吗？",
+        "url": "https://finnhub.io/api/news?id=ff49918f5c74c088adfba5f6878cd869649f31b21e6b02102737f1edab672946",
+        "datetime": 1781048760,
         "source": "Yahoo"
       },
       {
-        "headline": "昨天大幅波动的股票：Marvell Technology、Intel、Teradyne、JFrog 和 Tesla",
-        "url": "https://finnhub.io/api/news?id=71430d303846db4d135d6e2f51519cbfd63689959b4289ad4a0ce9366c1daedd",
-        "datetime": 1781035574,
+        "headline": "罗布·阿诺特：SpaceX 会创造有史以来最大的泡沫吗？",
+        "url": "https://finnhub.io/api/news?id=2e941584293a20059e9a9eb9ead042e17424581eb65fd2da1f7bf84af43b4805",
+        "datetime": 1781048263,
         "source": "Yahoo"
       },
       {
-        "headline": "SpaceX 和特斯拉合并的 5 个原因",
-        "url": "https://finnhub.io/api/news?id=cc075938c571651837fdb76090f1bca69fa19d221c57ba27ef6c329716f91570",
-        "datetime": 1781033700,
+        "headline": "Fluence 获得行业领先电池存储可靠性的独立验证",
+        "url": "https://finnhub.io/api/news?id=5a48a3978964f0866e83ab3c28c08c0cb947b04650e74f812e3afc697b40ba97",
+        "datetime": 1781043108,
         "source": "Yahoo"
       }
     ],
