@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-10T22:49:45.530Z",
+  "updated_at": "2026-06-11T00:11:23.514Z",
   "stocks": [
     {
       "symbol": "VOO",
@@ -65,63 +65,63 @@
   "crypto": [
     {
       "symbol": "BTC",
-      "price": 61403,
-      "change_pct": -0.63
+      "price": 61556,
+      "change_pct": -0.3
     },
     {
       "symbol": "ETH",
-      "price": 1616.83,
-      "change_pct": -1.64
+      "price": 1622.73,
+      "change_pct": -1.04
     },
     {
       "symbol": "SOL",
-      "price": 62.83,
-      "change_pct": -3.37
+      "price": 63.28,
+      "change_pct": -2.72
     },
     {
       "symbol": "HYPE",
-      "price": 53.35,
-      "change_pct": -7.68
+      "price": 53.25,
+      "change_pct": -8.27
     },
     {
       "symbol": "ZEC",
-      "price": 409.83,
-      "change_pct": -6.63
+      "price": 411.01,
+      "change_pct": -4.17
     },
     {
       "symbol": "TAO",
-      "price": 200.5,
-      "change_pct": -3.17
+      "price": 201.25,
+      "change_pct": -2.55
     },
     {
       "symbol": "SKY",
-      "price": 1269.28,
-      "change_pct": -1.8
+      "price": 1274.54,
+      "change_pct": -1.26
     },
     {
       "symbol": "AAVE",
-      "price": 60.85,
-      "change_pct": -2.45
+      "price": 61.41,
+      "change_pct": -1.18
     },
     {
       "symbol": "BNB",
-      "price": 584.53,
-      "change_pct": -1.61
+      "price": 586.79,
+      "change_pct": -1.18
     },
     {
       "symbol": "NEAR",
-      "price": 1.97,
-      "change_pct": -9.09
+      "price": 1.98,
+      "change_pct": -8.22
     },
     {
       "symbol": "DOGE",
-      "price": 0.082416,
-      "change_pct": -2.83
+      "price": 0.083063,
+      "change_pct": -2.12
     },
     {
       "symbol": "SPACEX",
-      "price": 712.09,
-      "change_pct": 0.78
+      "price": 706.94,
+      "change_pct": 3.99
     }
   ],
   "earnings": {
@@ -474,6 +474,24 @@
   },
   "news": [
     {
+      "headline": "公司从新加坡迁往更便宜、更宽敞的马来西亚，显示全球流动性趋势不断上升",
+      "summary": "较低的成本、税收优惠和进入更大市场的机会使得许多公司将业务从新加坡转移到马来西亚。",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/11/global-mobility-firms-move-operations-from-singapore-to-malaysia.html",
+      "datetime": 1781135812,
+      "category": "top news",
+      "related": ""
+    },
+    {
+      "headline": "CFTC 提出有利于体育赛事合同而不是赌博的框架",
+      "summary": "拟议的规则将保护选举市场，并允许许多基于体育的预测合同，同时限制可能鼓励操纵的赌注。",
+      "source": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/cftc-prediction-market-rules-sports-election-contracts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "datetime": 1781130600,
+      "category": "crypto",
+      "related": ""
+    },
+    {
       "headline": "战争专家赫格斯称美国今晚将袭击伊朗，塔斯尼姆警告称将做出严厉回应",
       "summary": "<p class=\"font-claude-response-bodybreak-wordswhitespace-normal\">\n这种性质的头条新闻具有推动大幅避险走势的巨大潜力，由于担心霍尔木兹海峡供应中断和更广泛的区域升级，油价可能会飙升。避险资金流入",
       "source": "Forexlive",
@@ -724,24 +742,6 @@
       "datetime": 1781099419,
       "category": "top news",
       "related": ""
-    },
-    {
-      "headline": "我们正在削减另一只股票，以在 SpaceX IPO 出现波动之前增加现金",
-      "summary": "我们本周将进行第四次出售，以使我们的现金头寸接近 12%，为我们预计未来仍将波动的市场做好准备。",
-      "source": "CNBC",
-      "url": "https://www.cnbc.com/2026/06/10/were-trimming-a-stock-raising-our-large-cash-position-ahead-of-volatility.html",
-      "datetime": 1781098527,
-      "category": "top news",
-      "related": ""
-    },
-    {
-      "headline": "CoinDesk 20 业绩更新：由于所有成分股下跌，指数下跌 1.4%",
-      "summary": "",
-      "source": "CoinDesk",
-      "url": "https://www.coindesk.com/coindesk-indices/2026/06/10/coindesk-20-performance-update-index-drops-1-4-as-all-constituents-decline",
-      "datetime": 1781097793,
-      "category": "crypto",
-      "related": ""
     }
   ],
   "ipo_watch": [
@@ -807,31 +807,31 @@
     }
   ],
   "btc_score": {
-    "score": 28.7,
+    "score": 28.8,
     "level": "恐慌",
     "suggestion": "市场低估，适合分批建仓或加仓",
-    "daily_score": 14.9,
+    "daily_score": 15,
     "weekly_score": 13.8,
-    "btc_price": 61477.7,
+    "btc_price": 61569.1,
     "fear_greed": 14,
     "indicators": [
       {
         "name": "ETF 每日净流入",
-        "value": -70400000,
+        "value": -69400000,
         "score": 45,
         "weight": 12,
         "group": "daily"
       },
       {
         "name": "Funding Rate",
-        "value": -0.002695,
-        "score": 44,
+        "value": -0.000811,
+        "score": 45,
         "weight": 8,
         "group": "daily"
       },
       {
         "name": "多空比",
-        "value": 2.08,
+        "value": 2.11,
         "score": 100,
         "weight": 5,
         "group": "daily"
@@ -901,8 +901,8 @@
       },
       {
         "name": "成交量变化",
-        "value": -75.7,
-        "score": 24,
+        "value": -73.2,
+        "score": 25,
         "weight": 4,
         "group": "weekly"
       }
@@ -911,7 +911,7 @@
   "fomc": {
     "next": {
       "date": "2026-06-17",
-      "days_until": 7
+      "days_until": 6
     },
     "schedule": [
       "2025-01-29",
@@ -1094,36 +1094,36 @@
         "text": "My beliefs: Retweets are notifications, not endorsements. Constructive dialogue leads to better outcomes. Bitcoin is hope and economic empowerment for everyone. Every good-faith effort to strengthen the network should be welcomed.",
         "url": "https://x.com/saylor/status/2064637939447935334",
         "time": "Wed Jun 10 09:16:58 +0000 2026",
-        "likes": 9524,
-        "retweets": 974
+        "likes": 9668,
+        "retweets": 991
       },
       {
         "text": "₿usiness is Good. https://t.co/yXuaDxGeay",
         "url": "https://x.com/saylor/status/2064357330599252462",
         "time": "Tue Jun 09 14:41:56 +0000 2026",
-        "likes": 14176,
-        "retweets": 1190
+        "likes": 14222,
+        "retweets": 1193
       },
       {
         "text": "$STRC and $MSTR shareholders have approved the amendment to move $STRC dividends from monthly to semi-monthly. Under the new cadence, the first record date is June 30 and the first payment date is July 15. Thank you to every shareholder who voted. https://t.co/3sIqqF3FCR",
         "url": "https://x.com/saylor/status/2063989759559495774",
         "time": "Mon Jun 08 14:21:20 +0000 2026",
-        "likes": 11418,
-        "retweets": 1109
+        "likes": 11419,
+        "retweets": 1108
       },
       {
         "text": "Strategy has acquired 1,550 BTC for $101 million to increase our $BTC Reserve to ₿845,256. We have also increased our USD Reserve by $100 million to $1.0 billion. $MSTR $STRC https://t.co/1Zf1AVsP1H",
         "url": "https://x.com/saylor/status/2063954606879543589",
         "time": "Mon Jun 08 12:01:39 +0000 2026",
-        "likes": 31657,
-        "retweets": 4047
+        "likes": 31661,
+        "retweets": 4046
       },
       {
         "text": "32?",
         "url": "https://x.com/saylor/status/2063731803312001111",
         "time": "Sun Jun 07 21:16:18 +0000 2026",
-        "likes": 22069,
-        "retweets": 1575
+        "likes": 22070,
+        "retweets": 1574
       }
     ],
     "viktorfischer": [
@@ -1167,97 +1167,97 @@
   "portfolio_news": {
     "NVDA": [
       {
-        "headline": "道琼斯期货：特朗普对人工智能的担忧让市场即将突破；甲骨文财报迟到，SpaceX 首次公开募股即将启动",
-        "url": "https://finnhub.io/api/news?id=8195cbec66af6cdad266ded04fbe3bd746d1003101a83de5c96180e093da0ce8",
-        "datetime": 1781124598,
+        "headline": "Marvell 科技股票为何今天下跌",
+        "url": "https://finnhub.io/api/news?id=fbf512fca3dc78207b469140b00652ecad10ca76e7205a03f49eb4acee446286",
+        "datetime": 1781135437,
         "source": "Yahoo"
       },
       {
-        "headline": "泄露：博通（AVGO）是另一个人工智能行业吗？",
-        "url": "https://finnhub.io/api/news?id=24f0b57e6c6fb2433d376413723c0d4f5036cc9fe55212a313e03d5215f664d0",
-        "datetime": 1781127677,
+        "headline": "目前无人参与的人工智能行业——以及为什么它可能是 2026 年的最佳机会",
+        "url": "https://finnhub.io/api/news?id=9f62476e622a2c0adbcb4f9b0e461b570a873db98b5084aeb5b7d63d0cf86441",
+        "datetime": 1781135400,
         "source": "Yahoo"
       },
       {
-        "headline": "您应该逢低买入博通股票吗？",
-        "url": "https://finnhub.io/api/news?id=411bec21898cc6160f56dfc89a0acc0165202bad8b764be20b90d245716c0537",
-        "datetime": 1781126940,
+        "headline": "特朗普攻击伊朗，道琼斯期货下跌，甲骨文尾盘下跌； SpaceX 首次公开募股在发射台上",
+        "url": "https://finnhub.io/api/news?id=3829a65128e078d0e43e18f2558bb77ff9b691fcfd81df0f2774a68df1bfc051",
+        "datetime": 1781134946,
         "source": "Yahoo"
       },
       {
-        "headline": "为什么纽蒙特股票周三暴跌",
-        "url": "https://finnhub.io/api/news?id=5dcba7d08558a4ca76a950281e1a281f2e39ad24c556d5e63cdeeb1905b13043",
-        "datetime": 1781126912,
+        "headline": "购买 SpaceX IPO 的 1 个理由和避免 SpaceX IPO 的 3 个理由",
+        "url": "https://finnhub.io/api/news?id=1409f712b5e0c27b87a0b7f5442f022a3ed763987f20830999a3a58737c8a9fb",
+        "datetime": 1781133900,
         "source": "Yahoo"
       },
       {
-        "headline": "现在就用 2,000 美元购买最明智的股息 ETF",
-        "url": "https://finnhub.io/api/news?id=ff368eeb0914d713dfe1550be409b50e2c909c21a3344390c54e0854805be8ce",
-        "datetime": 1781126700,
+        "headline": "为什么 KLA 公司的股票今天小幅超越大盘",
+        "url": "https://finnhub.io/api/news?id=56f68bb7e0404720428a8bcfced495ce1682c67a710ee8496e8e4202902ea24b",
+        "datetime": 1781133874,
         "source": "Yahoo"
       }
     ],
     "GOOG": [
       {
+        "headline": "特朗普攻击伊朗，道琼斯期货下跌，甲骨文尾盘下跌； SpaceX 首次公开募股在发射台上",
+        "url": "https://finnhub.io/api/news?id=3829a65128e078d0e43e18f2558bb77ff9b691fcfd81df0f2774a68df1bfc051",
+        "datetime": 1781134946,
+        "source": "Yahoo"
+      },
+      {
+        "headline": "Alphabet (NasdaqGS:GOOGL) 估值检查，股价势头在强劲的一年后冷却",
+        "url": "https://finnhub.io/api/news?id=a57a60e8de21ee0ebbf61ba35cc3f138a9a6b5e70e99a7840418d08f9af0cfcd",
+        "datetime": 1781133875,
+        "source": "Yahoo"
+      },
+      {
+        "headline": "华尔街首席信息官：人工智能贸易“技术上不可持续”而是购买这两个行业。",
+        "url": "https://finnhub.io/api/news?id=16846464d87fab7ade4597442c956e44ddf44079f3ef924ca848bb986844dbd2",
+        "datetime": 1781130531,
+        "source": "Yahoo"
+      },
+      {
         "headline": "道琼斯期货：特朗普对人工智能的担忧让市场即将突破；甲骨文财报迟到，SpaceX 首次公开募股即将启动",
         "url": "https://finnhub.io/api/news?id=8195cbec66af6cdad266ded04fbe3bd746d1003101a83de5c96180e093da0ce8",
         "datetime": 1781124598,
         "source": "Yahoo"
       },
       {
-        "headline": "甲骨文：支出不足的“生存风险”比超支更严重",
-        "url": "https://finnhub.io/api/news?id=0fda9fae2ee87fba3cbff72e7e6072e96ffaa398993bde51e57e0f5cf08dcfb1",
-        "datetime": 1781125959,
-        "source": "Yahoo"
-      },
-      {
-        "headline": "SpaceX 刚刚向 Nvidia 股票投资者宣布了好消息",
-        "url": "https://finnhub.io/api/news?id=91362bd49e83e331b4caf424d2a19c87fbfbf685030078797878e1149322349d",
-        "datetime": 1781124300,
-        "source": "Yahoo"
-      },
-      {
-        "headline": "苹果花费数十亿美元追逐自动驾驶汽车，然后扬长而去——Waymo 现在以 2.2 亿美元买下了测试场地",
-        "url": "https://finnhub.io/api/news?id=65119bdd681caf77ef57914801fdacf5a4bb4dbcf089097ef3c616e5ebe1cfe4",
-        "datetime": 1781123473,
-        "source": "Yahoo"
-      },
-      {
-        "headline": "人工智能股：MANGOS 上涨，取代 FAANG 位置",
-        "url": "https://finnhub.io/api/news?id=ba489e40251b170d8ea5e4544d4b336da35fe2277cc7e8402dd61064d2de6cf7",
-        "datetime": 1781122011,
+        "headline": "解读 PLTR 股票的溢价估值",
+        "url": "https://finnhub.io/api/news?id=cd4eea2b5ef67e0c718d86606b22c07014f362db43773944a79239a9424ebb23",
+        "datetime": 1781127510,
         "source": "Yahoo"
       }
     ],
     "TSLA": [
       {
+        "headline": "由于美伊战争紧张、通胀风险刺激科技股抛售，标准普尔 500 指数、纳斯达克指数和道指下跌 — SMCI、AMZN、OPEN、SEGG、TSLA 成为焦点",
+        "url": "https://finnhub.io/api/news?id=cf745f92ad5d5ae3a7e9e1fb65daf29828772b8547b2b23f2719c1f9bc3d260d",
+        "datetime": 1781130719,
+        "source": "Yahoo"
+      },
+      {
+        "headline": "SpaceX：为什么这个 1.6 万亿美元的机会对于即将到来的 IPO 至关重要",
+        "url": "https://finnhub.io/api/news?id=302fc61758e8c61e8d42b802c89ea7c49de123c55cf91ee5892b32d98e2c8a0c",
+        "datetime": 1781130300,
+        "source": "Yahoo"
+      },
+      {
+        "headline": "这就是特斯拉 (TSLA) 跌幅超过大盘的原因",
+        "url": "https://finnhub.io/api/news?id=88b135b44e7a7e86116adcbaa86edf9632914b2a520992be324215681b8843eb",
+        "datetime": 1781127904,
+        "source": "Yahoo"
+      },
+      {
+        "headline": "TSLA 股票关注 SpaceX 首次公开募股，而最便宜的赛博卡车经过漫长的等待后才上路",
+        "url": "https://finnhub.io/api/news?id=b3366d96014d13e7beede130f4c0f67350bdfd8e926d4cd739bd94179f307ce3",
+        "datetime": 1781127082,
+        "source": "Yahoo"
+      },
+      {
         "headline": "比亚迪提高全球野心，特斯拉股价下滑",
         "url": "https://finnhub.io/api/news?id=18252dad4754b4ef98caf2117dbadde3ae52a61805152ad0d34fa17488174978",
         "datetime": 1781120742,
-        "source": "Yahoo"
-      },
-      {
-        "headline": "摩根大通将目标提升 227%，特斯拉股价飙升至牛市",
-        "url": "https://finnhub.io/api/news?id=ff3f8491f8801d98e31ec73d05cb3cc66eef3173c481b6778d365b5499a526a5",
-        "datetime": 1781120181,
-        "source": "Yahoo"
-      },
-      {
-        "headline": "埃隆·马斯克 (Elon Musk) 详细剖析了人工智能卫星的组成部分，以及为什么在大型 SpaceX 首次公开募股之前设计变得“更容易”：“很多太阳能电池、一个散热器……”",
-        "url": "https://finnhub.io/api/news?id=cc0adf7f6b4f28a58b67fa813efedd7e481bce755f6a3d22e492dccb6eb72f48",
-        "datetime": 1781119873,
-        "source": "Yahoo"
-      },
-      {
-        "headline": "SpaceX 大规模 IPO 即将到来。我们为投资者提供了基础知识",
-        "url": "https://finnhub.io/api/news?id=462b5104116792fcd85bd61f69a9d75fee1a9fe02b4f7504f3824c9b51dc3275",
-        "datetime": 1781118843,
-        "source": "Yahoo"
-      },
-      {
-        "headline": "SpaceX 价值 26.5 万亿美元的人工智能 (AI) 帝国中的 2 只股票可能会飙升",
-        "url": "https://finnhub.io/api/news?id=66ec9835765ccc0b682555fcfc3ba35e6d249000ec7ad566ad8d01a22901554e",
-        "datetime": 1781116860,
         "source": "Yahoo"
       }
     ],
@@ -1305,12 +1305,6 @@
         "url": "https://finnhub.io/api/news?id=e14b04f516ae973376293203d561fab179edb4cd123982ea66db6633d16d8998",
         "datetime": 1781057101,
         "source": "SeekingAlpha"
-      },
-      {
-        "headline": "为什么中国的资本监管和汉堡供应都变得更加严格",
-        "url": "https://finnhub.io/api/news?id=23c693962977076d9b411c8e07e9ba370898e99640651486ee4b7fdaa3efd170",
-        "datetime": 1780499716,
-        "source": "Benzinga"
       }
     ],
     "BTC": [
@@ -1395,6 +1389,12 @@
     ],
     "DOGE": [
       {
+        "headline": "只为总督做好事，我们需要更多像克里斯这样的 Shibes",
+        "url": "https://x.com/dogecoin/status/2064853463251423344",
+        "datetime": 1781134403,
+        "source": "@dogecoin"
+      },
+      {
         "headline": "很多公交车。非常太阳能。弗里兹尔女士送孩子们下车后继续直奔月球",
         "url": "https://x.com/dogecoin/status/2064461388685181022",
         "datetime": 1781040925,
@@ -1404,12 +1404,6 @@
         "headline": "西贝最近很安静\n如果您正在使用 doge 构建某些东西或在您的企业中接受它，请回复我们👇我们将提升最酷的 onez",
         "url": "https://x.com/dogecoin/status/2064111017777320310",
         "datetime": 1780957390,
-        "source": "@dogecoin"
-      },
-      {
-        "headline": "1985 年，总督将掌管科技领域",
-        "url": "https://x.com/dogecoin/status/2062982858315092259",
-        "datetime": 1780688416,
         "source": "@dogecoin"
       }
     ],
