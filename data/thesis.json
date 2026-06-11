@@ -157,6 +157,83 @@
         "SEC Form 13F-HR, Situational Awareness LP"
       ],
       "last_reviewed": "2026-06-10"
+    },
+    "HYPE": {
+      "name": "Hyperliquid",
+      "exchange": "",
+      "verdict": "hold_avoid",
+      "thesis": "自建 L1(HyperCore + HyperEVM)上的链上永续合约与现货交易所,费用近 100% 经援助基金(AF)自动回购并销毁 HYPE,等价于股票回购式股东回报——加密市场中现金回报机制最直接的资产之一。按流通市值口径(14.3x TTM 费用)明显便宜于 Coinbase(61x)与 Robinhood(42x);但按 FDV 口径(56.7x)已与 Coinbase 相当。估值的胜负手不在业务本身,而在稀释: 约 61% 总量尚未解锁,核心贡献者每月解锁约 $7 亿市值持续到 2027-28 年。DCF 概率加权全稀释现值约 $29/枚,现价 $60 已计入相当乐观的费用增长;基准情景 5 年 IRR 约 -4% ~ -1%,上行需费用 CAGR 持续 >25%(牛市 IRR +15-19%),下行风险深(熊市 -30%)。",
+      "valuation": {
+        "value_target": 29,
+        "value_range": [5, 63],
+        "value_method": "5 年期 FCFE 贴现(DCF) + 可比倍数交叉验证; 概率加权(牛25%/基准50%/熊25%); 全稀释口径",
+        "growth_target": 67,
+        "growth_scenario": "2031 年概率加权目标价(流通口径); 牛市情景 $144,基准 $58,熊市 $11",
+        "reference_price": 60,
+        "reference_date": "2026-06"
+      },
+      "assumptions": [
+        {
+          "text": "协议费用维持增长(基准 CAGR ~20%,牛市 ~35%)",
+          "status": "tracking",
+          "evidence": "TTM 费用 $10.6 亿; 30 天年化 $9.2 亿,较 2025 年 $8.44 亿仍增长但环比降温"
+        },
+        {
+          "text": "永续 DEX 市占率维持(当前 OI 占比 70%+)",
+          "status": "at_risk",
+          "evidence": "70%+ 处于历史高位,均值回归风险大; CEX(币安等)与新 DEX 费率战可能压缩"
+        },
+        {
+          "text": "解锁稀释不压垮价格(约 61% 未解锁)",
+          "status": "at_risk",
+          "evidence": "核心贡献者 2.38 亿枚月度线性解锁至 2027-28(每月约 $7 亿市值); 另有 38.9% 划归未来排放,投放节奏完全未定"
+        },
+        {
+          "text": "HIP-3 / HyperEVM 生态贡献增量费用",
+          "status": "tracking",
+          "evidence": "HIP-3 允许第三方自部署永续市场(费用分成最高 50%); HyperEVM 生态(借贷/RWA)尚处早期"
+        },
+        {
+          "text": "链上永续合约监管环境不恶化",
+          "status": "tracking",
+          "evidence": "美欧合规定位未明; ETF 通道(21Shares THYP)既是机会也意味着监管敞口加大"
+        }
+      ],
+      "financial_check": {
+        "period": "2026 年 6 月 链上数据",
+        "verdict": "partial",
+        "summary": "费用与市占强劲但环比降温; 流通口径估值便宜,FDV 口径已不便宜; 解锁压力是核心矛盾",
+        "metrics": [
+          { "name": "价格 / ATH", "actual": "$60 / ATH $75.51 (6月2日)", "vs_thesis": "neutral", "note": "6月6日约 $7 亿解锁后回落至 $59.4" },
+          { "name": "流通市值 / FDV", "actual": "$151 亿 / $620 亿", "vs_thesis": "negative", "note": "流通仅占 25.4%,FDV 是流通市值 4 倍——稀释风险的核心矛盾" },
+          { "name": "协议费用 TTM / 30d 年化", "actual": "$10.6 亿 / $9.2 亿", "vs_thesis": "neutral", "note": "2025 全年 $8.44 亿; 仍在增长但 30d 年化低于 TTM,环比降温信号" },
+          { "name": "流通 P/E vs 可比", "actual": "14.3x (vs COIN 61x / HOOD 42x / CME 21.5x)", "vs_thesis": "positive", "note": "流通口径明显便宜; 但 FDV 口径 56.7x 已与 Coinbase 相当" },
+          { "name": "AF 累计回购", "actual": "> $13 亿", "vs_thesis": "positive", "note": "约 97% 费用自动回购销毁 HYPE,无需治理投票" },
+          { "name": "永续 DEX OI 市占", "actual": "70%+", "vs_thesis": "positive", "note": "绝对主导地位; 但处历史高位,均值回归风险" }
+        ]
+      },
+      "risks": [
+        "解锁稀释(最大风险): 约 61% 供应未解锁; CC 每月 ~$7 亿解锁至 2027-28; 38.9% 未来排放节奏完全未定",
+        "费率与竞争: CEX 与新永续 DEX 费率战; 70%+ OI 市占处历史高位,均值回归风险大",
+        "周期性: 费用与加密成交量高度相关; 30d 年化($9.2 亿)已低于 TTM($10.6 亿),熊市费用可能腰斩",
+        "监管: 链上永续合约在美欧合规定位未明; ETF 通道加大监管敞口",
+        "技术与中心化: 跨链桥与 L1 安全、验证人集中度、Hyper Foundation 对升级与上币的实际控制"
+      ],
+      "catalysts": [
+        "HIP-3 生态放量: 第三方自部署永续市场规模化,带来增量费用",
+        "HyperEVM 生态成熟: 借贷/RWA 等应用贡献非永续合约费用",
+        "解锁节奏放缓(2028 年后): CC 解锁结束,稀释压力边际递减",
+        "加密牛市周期: 成交量放大直接驱动费用增长",
+        "ETF 通道扩展: 21Shares THYP 等产品引入传统资金(约 65% 参与质押)"
+      ],
+      "sources": [
+        "DeFiLlama API (协议费用、TVL、成交量)",
+        "CoinGecko / CoinMarketCap (价格、流通量、FDV)",
+        "Hyperliquid 官方 GitBook 文档 (费用结构、AF 回购机制)",
+        "Tokenomist / DeFiLlama (解锁时间表)",
+        "Datawallet (2025 全年费用/成交量/用户数据)"
+      ],
+      "last_reviewed": "2026-06-10"
     }
   }
 }
