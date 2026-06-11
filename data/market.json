@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-11T21:15:27.813Z",
+  "updated_at": "2026-06-11T23:20:06.694Z",
   "stocks": [
     {
       "symbol": "VOO",
@@ -65,63 +65,63 @@
   "crypto": [
     {
       "symbol": "BTC",
-      "price": 63478,
-      "change_pct": 3.24
+      "price": 63341,
+      "change_pct": 3.48
     },
     {
       "symbol": "ETH",
-      "price": 1676.8,
+      "price": 1670.91,
       "change_pct": 3.74
     },
     {
       "symbol": "SOL",
-      "price": 66.77,
-      "change_pct": 6.1
+      "price": 66.7,
+      "change_pct": 6.67
     },
     {
       "symbol": "HYPE",
-      "price": 58.8,
-      "change_pct": 10.23
+      "price": 58.78,
+      "change_pct": 11.13
     },
     {
       "symbol": "ZEC",
-      "price": 438.07,
-      "change_pct": 7.84
+      "price": 433.72,
+      "change_pct": 6.56
     },
     {
       "symbol": "TAO",
-      "price": 214.46,
-      "change_pct": 7.2
+      "price": 214.12,
+      "change_pct": 7.33
     },
     {
       "symbol": "SKY",
-      "price": 1342.36,
-      "change_pct": 5.73
+      "price": 1332.32,
+      "change_pct": 5.41
     },
     {
       "symbol": "AAVE",
-      "price": 64.39,
-      "change_pct": 5.63
+      "price": 64.09,
+      "change_pct": 5.9
     },
     {
       "symbol": "BNB",
-      "price": 603.35,
-      "change_pct": 3.26
+      "price": 602.61,
+      "change_pct": 3.34
     },
     {
       "symbol": "NEAR",
-      "price": 2.08,
-      "change_pct": 6.08
+      "price": 2.05,
+      "change_pct": 4.91
     },
     {
       "symbol": "DOGE",
-      "price": 0.086426,
-      "change_pct": 4.92
+      "price": 0.086234,
+      "change_pct": 4.71
     },
     {
       "symbol": "SPACEX",
-      "price": 698.19,
-      "change_pct": -1.94
+      "price": 703.93,
+      "change_pct": -0.68
     }
   ],
   "earnings": {
@@ -474,6 +474,33 @@
   },
   "news": [
     {
+      "headline": "特朗普宣布第 39 次“协议”后，油价下跌。巴甫洛夫的狗遇见了薛定谔的猫。",
+      "summary": "<p>我早些时候发帖称，美国总统唐纳德·特朗普取消了原定于周四晚上对伊朗进行的军事打击，并表示谈判已达到伊朗领导层最高层，最终协议可能很快签署。白宫表示达成框架协议",
+      "source": "Forexlive",
+      "url": "https://investinglive.com/Cryptocurrency/oil-price-drop-on-trumps-39th-deal-announcement-pavlovs-dog-meets-shcrodingers-cat-20260611/",
+      "datetime": 1781213697,
+      "category": "crypto",
+      "related": ""
+    },
+    {
+      "headline": "花旗推出私营公司股票区块链市场：报告",
+      "summary": "在华尔街广泛接受代币化资产的背景下，这家美国银行业巨头的区块链市场将提供私人公司股票的代币化存托凭证。",
+      "source": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/citi-launches-blockchain-marketplace-private-company-shares?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "datetime": 1781213096,
+      "category": "crypto",
+      "related": ""
+    },
+    {
+      "headline": "埃隆·马斯克 (Elon Musk) 的 SpaceX 将股价定为 135 美元，筹集 750 亿美元，史上规模最大的 IPO",
+      "summary": "",
+      "source": "CoinDesk",
+      "url": "https://www.coindesk.com/markets/2026/06/11/spacex-prices-shares-at-usd135-in-largest-ipo-ever",
+      "datetime": 1781208766,
+      "category": "crypto",
+      "related": ""
+    },
+    {
       "headline": "伊顿距离成为人工智能热潮中更清洁的赌注又近了一步",
       "summary": "汽车零部件制造商 Dana 已同意与伊顿的移动业务部门合并，该业务部门的估值为 51 亿美元。",
       "source": "CNBC",
@@ -493,7 +520,7 @@
     },
     {
       "headline": "英特尔因美国银行双重升级而飙升。吉姆·克莱默 (Jim Cramer) 表示投资者必须这样做",
-      "summary": "吉姆·克莱默 (Jim Cramer) 表示，不拥有英特尔任何股份的投资者需要参与其中。",
+      "summary": "吉姆·克莱默 (Jim Cramer) 表示，不拥有英特尔任何股份的投资者需要参与进来。",
       "source": "CNBC",
       "url": "https://www.cnbc.com/2026/06/11/intel-soars-on-double-upgrade-from-bofa-heres-what-jim-cramer-says-investors-must-do.html",
       "datetime": 1781204098,
@@ -551,15 +578,6 @@
       "source": "CoinDesk",
       "url": "https://www.coindesk.com/business/2026/06/11/big-banks-are-ditching-private-blockchains-to-build-tokenized-cash-networks-on-public-infrastructure",
       "datetime": 1781195873,
-      "category": "crypto",
-      "related": ""
-    },
-    {
-      "headline": "Solflare 和 Collector Crypt 通过推出 Solflare Pack 统一链上收藏品体验",
-      "summary": "Solflare Packs 由 Collector Crypt 提供支持，通过允许用户打开真实的分级交易卡来扩展其钱包内收藏品体验，用户可以选择将实体卡运送到他们的家庭住址、在链上保留或卖回——所有这些都可以通过 Solflare 钱包进行。塞尔维亚贝尔格莱德,",
-      "source": "Cryptocurrency News",
-      "url": "https://cryptocurrencynews.com/crypto/solflare-and-collector-crypt-unify-collectibles-experience-on-chain-with-launch-of-solflare-packs/",
-      "datetime": 1781194747,
       "category": "crypto",
       "related": ""
     },
@@ -724,30 +742,17 @@
       "datetime": 1781181739,
       "category": "crypto",
       "related": ""
-    },
-    {
-      "headline": "日本加密货币法案通过 ETF、税收改革路径取得进展：报告",
-      "summary": "据报道，日本众议院通过了一项法案，将加密货币纳入该国的金融工具框架，这可能为 ETF 和较低的税收待遇打开大门。",
-      "source": "Cointelegraph",
-      "url": "https://cointelegraph.com/news/japan-crypto-bill-etf-tax-reform-path?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "datetime": 1781180241,
-      "category": "crypto",
-      "related": ""
-    },
-    {
-      "headline": "SpaceX IPO不会“打破”牛市。但投资者担心接下来会发生什么",
-      "summary": "就华尔街而言，股市有能力吸收新的供应。",
-      "source": "CNBC",
-      "url": "https://www.cnbc.com/2026/06/11/spacex-ipo-wont-break-the-bull-market-but-investors-are-worried-about-what-comes-next.html",
-      "datetime": 1781179822,
-      "category": "top news",
-      "related": ""
     }
   ],
   "ipo_watch": [
     {
       "company": "SpaceX",
       "news": [
+        {
+          "headline": "埃隆·马斯克 (Elon Musk) 的 SpaceX 将股价定为 135 美元，筹集 750 亿美元，史上规模最大的 IPO",
+          "url": "https://www.coindesk.com/markets/2026/06/11/spacex-prices-shares-at-usd135-in-largest-ipo-ever",
+          "datetime": 1781208766
+        },
         {
           "headline": "SpaceX 股票将于 Solana 在纳斯达克上市的同一天上市",
           "url": "https://www.coindesk.com/tech/2026/06/10/spacex-stock-is-coming-to-solana-on-the-same-day-it-lists-on-nasdaq",
@@ -757,11 +762,6 @@
           "headline": "这不是 SpaceX。比特币 ETF 流出可能是一个套利故事",
           "url": "https://www.coindesk.com/markets/2026/06/11/bitcoin-etf-outflows-may-be-more-about-arbitrage-unwinds-than-spacex-fomo",
           "datetime": 1781181739
-        },
-        {
-          "headline": "SpaceX IPO不会“打破”牛市。但投资者担心接下来会发生什么",
-          "url": "https://www.cnbc.com/2026/06/11/spacex-ipo-wont-break-the-bull-market-but-investors-are-worried-about-what-comes-next.html",
-          "datetime": 1781179822
         }
       ]
     },
@@ -811,32 +811,32 @@
     }
   ],
   "btc_score": {
-    "score": 25.5,
+    "score": 27.2,
     "level": "恐慌",
     "suggestion": "市场低估，适合分批建仓或加仓",
-    "daily_score": 12.5,
+    "daily_score": 14.2,
     "weekly_score": 13,
-    "btc_price": 63555.6,
+    "btc_price": 63413.7,
     "fear_greed": 14,
     "indicators": [
       {
         "name": "ETF 每日净流入",
-        "value": -213900000,
-        "score": 36,
+        "value": -5300000,
+        "score": 50,
         "weight": 12,
         "group": "daily"
       },
       {
         "name": "Funding Rate",
-        "value": -0.001152,
+        "value": -0.001664,
         "score": 44,
         "weight": 8,
         "group": "daily"
       },
       {
         "name": "多空比",
-        "value": 1.61,
-        "score": 74,
+        "value": 1.59,
+        "score": 73,
         "weight": 5,
         "group": "daily"
       },
@@ -898,15 +898,15 @@
       },
       {
         "name": "周线 RSI",
-        "value": 34.7,
-        "score": 25,
+        "value": 34.5,
+        "score": 24,
         "weight": 5,
         "group": "weekly"
       },
       {
         "name": "成交量变化",
-        "value": -76.2,
-        "score": 24,
+        "value": -73.8,
+        "score": 25,
         "weight": 4,
         "group": "weekly"
       }
@@ -1025,7 +1025,7 @@
         "url": "https://x.com/cburniske/status/2062340385859580240",
         "time": "Thu Jun 04 01:07:19 +0000 2026",
         "likes": 1442,
-        "retweets": 78
+        "retweets": 77
       },
       {
         "text": "I don’t see a new paradigm where majors are rotated out of, and select up-and-comers can sustain their swim against an outgoing tide for long. Instead, I think majors are telling us something, and people are finding reasons not to listen.",
@@ -1098,35 +1098,35 @@
         "text": "No ₿rakes. https://t.co/eqDwmzVWck",
         "url": "https://x.com/saylor/status/2065115304888353157",
         "time": "Thu Jun 11 16:53:51 +0000 2026",
-        "likes": 7455,
-        "retweets": 554
+        "likes": 8477,
+        "retweets": 619
       },
       {
         "text": "Accretion depends on the metric. Net Assets per Share measures balance sheet strength and residual asset value. BTC per Share measures Bitcoin intensity and long-term equity upside. NAV accretion improves asset coverage. BTC Yield accretion increases Bitcoin per share. $MSTR $BTC",
         "url": "https://x.com/saylor/status/2064981916810375567",
         "time": "Thu Jun 11 08:03:49 +0000 2026",
-        "likes": 4588,
-        "retweets": 604
+        "likes": 4670,
+        "retweets": 611
       },
       {
         "text": "My beliefs: Retweets are notifications, not endorsements. Constructive dialogue leads to better outcomes. Bitcoin is hope and economic empowerment for everyone. Every good-faith effort to strengthen the network should be welcomed.",
         "url": "https://x.com/saylor/status/2064637939447935334",
         "time": "Wed Jun 10 09:16:58 +0000 2026",
-        "likes": 10726,
-        "retweets": 1131
+        "likes": 10784,
+        "retweets": 1135
       },
       {
         "text": "₿usiness is Good. https://t.co/yXuaDxGeay",
         "url": "https://x.com/saylor/status/2064357330599252462",
         "time": "Tue Jun 09 14:41:56 +0000 2026",
-        "likes": 14687,
+        "likes": 14691,
         "retweets": 1249
       },
       {
         "text": "$STRC and $MSTR shareholders have approved the amendment to move $STRC dividends from monthly to semi-monthly. Under the new cadence, the first record date is June 30 and the first payment date is July 15. Thank you to every shareholder who voted. https://t.co/3sIqqF3FCR",
         "url": "https://x.com/saylor/status/2063989759559495774",
         "time": "Mon Jun 08 14:21:20 +0000 2026",
-        "likes": 11427,
+        "likes": 11429,
         "retweets": 1112
       }
     ],
@@ -1171,7 +1171,7 @@
   "portfolio_news": {
     "NVDA": [
       {
-        "headline": "从 52 周高点下跌 33%，是时候逢低买入 AST SpaceMobile 了吗？",
+        "headline": "从 52 周高点下跌 33%，是时候抄底 AST SpaceMobile 了吗？",
         "url": "https://finnhub.io/api/news?id=b11916666fab9435551c775b27727bab2963939b7ca79966e266a609df1cf5d6",
         "datetime": 1781207400,
         "source": "Yahoo"
@@ -1209,6 +1209,12 @@
         "source": "Yahoo"
       },
       {
+        "headline": "Adobe Q2：太便宜了，不容忽视",
+        "url": "https://finnhub.io/api/news?id=7e09b7f32fef1512557522bec84e60b73c603cd83b85645d703806ffe9a1ddd3",
+        "datetime": 1781203832,
+        "source": "SeekingAlpha"
+      },
+      {
         "headline": "Waymo 推出 30 美元会员卡，每周 Robotaxi 乘车次数达到 500,000 次",
         "url": "https://finnhub.io/api/news?id=e6813e5b1415f329a7e0c7858b4d31029be82cc7037871ebeb9ef94024e63ff6",
         "datetime": 1781203526,
@@ -1224,12 +1230,6 @@
         "headline": "Apple 如何利用 Google 的 AI 重建 Siri",
         "url": "https://finnhub.io/api/news?id=729d9a95f4b09fc4204e3126489ee84086cd888909a05c3e4ac2e7c5493d31b6",
         "datetime": 1781203377,
-        "source": "Yahoo"
-      },
-      {
-        "headline": "PLTR 股票：其估值意味着什么？",
-        "url": "https://finnhub.io/api/news?id=9d094434df572c4962060629ba4ddd552bf0f496e1d2aa388687d89961009c5c",
-        "datetime": 1781203276,
         "source": "Yahoo"
       }
     ],
@@ -1259,10 +1259,10 @@
         "source": "Yahoo"
       },
       {
-        "headline": "特斯拉公司 (TSLA) 是 Ken Griffin 投资组合中的顶级股票",
-        "url": "https://finnhub.io/api/news?id=5df2772bb9623a5b66c27e686479ea6f02751b372e0453c0a47ceb5356985ca3",
-        "datetime": 1781199090,
-        "source": "Yahoo"
+        "headline": "SpaceX IPO 预览：将其放在背景中",
+        "url": "https://finnhub.io/api/news?id=3e602479ffe5388c2d30d2c5874746e97a77827b1d2a4b133292adf42e99ed28",
+        "datetime": 1781202211,
+        "source": "SeekingAlpha"
       }
     ],
     "CRCL": [
@@ -1447,21 +1447,21 @@
     ],
     "NEAR": [
       {
-        "headline": "现在只需在您的账户中轻轻一按即可获得加密货币中最深层的流动性。\n\n之前：桥接一条链，找到场地，为新钱包注入资金，然后进行交易。\n\n现在：打开perps，交易。\n\n这是",
+        "headline": "“意图是区块链的下一个抽象层次。” — @ilblackdragon \n\n每一次技术革命都会消除另一层复杂性。意图消除了考虑执行的需要",
+        "url": "https://x.com/NEARProtocol/status/2065191384592667075",
+        "datetime": 1781214970,
+        "source": "@NEARProtocol"
+      },
+      {
+        "headline": "在这里观看完整的@_choppingblock 播客：",
+        "url": "https://x.com/NEARProtocol/status/2065191386807152935",
+        "datetime": 1781214970,
+        "source": "@NEARProtocol"
+      },
+      {
+        "headline": "现在只需在您的账户中轻轻一按即可获得加密货币中最深层的流动性。\n\n之前：桥接一条链，找到场地，为新钱包注入资金，然后进行交易。\n\n现在：打开perps，交易。\n\n它是",
         "url": "https://x.com/NEARProtocol/status/2065158303680700681",
         "datetime": 1781207083,
-        "source": "@NEARProtocol"
-      },
-      {
-        "headline": "NEAR Intents 现已集成到 SimpleSwap 中，SimpleSwap 是一个自我托管聚合器，已处理超过 2000 万次交换。\n\nNEAR Intents 支持 @SimpleSwap_io 的 Web 应用程序、移动应用程序和 API 之间的跨链交换",
-        "url": "https://x.com/NEARProtocol/status/2065089696120664179",
-        "datetime": 1781190725,
-        "source": "@NEARProtocol"
-      },
-      {
-        "headline": "Drop 1 已上线。\n\n完整公告如下：",
-        "url": "https://x.com/NEARProtocol/status/2065057519551045924",
-        "datetime": 1781183054,
         "source": "@NEARProtocol"
       }
     ],
@@ -1474,6 +1474,12 @@
       }
     ],
     "SPACEX": [
+      {
+        "headline": "埃隆·马斯克 (Elon Musk) 的 SpaceX 将股价定为 135 美元，筹集 750 亿美元，史上规模最大的 IPO",
+        "url": "https://www.coindesk.com/markets/2026/06/11/spacex-prices-shares-at-usd135-in-largest-ipo-ever",
+        "datetime": 1781208766,
+        "source": "CoinDesk"
+      },
       {
         "headline": "SpaceX 股票将于 Solana 在纳斯达克上市的同一天上市",
         "url": "https://www.coindesk.com/tech/2026/06/10/spacex-stock-is-coming-to-solana-on-the-same-day-it-lists-on-nasdaq",
@@ -1497,12 +1503,6 @@
         "url": "https://www.cnbc.com/2026/06/11/spacex-billionaire-investing.html",
         "datetime": 1781177597,
         "source": "CNBC"
-      },
-      {
-        "headline": "随着 SpaceX IPO 临近，Polymarket、Ventuals 在链上估值达 2 万亿美元",
-        "url": "https://www.coindesk.com/daybook-us/2026/06/11/as-spacex-ipo-approaches-polymarket-ventuals-assign-usd2-trillion-valuation-onchain",
-        "datetime": 1781177034,
-        "source": "CoinDesk"
       }
     ]
   }
